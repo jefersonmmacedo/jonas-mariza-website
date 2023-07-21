@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import api from "../../services/api";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { Finance } from "../../components/Finance/Finance";
 
 export function Home() {
     const idCompany = process.env.REACT_APP_CODEUSER
@@ -372,8 +373,9 @@ export function Home() {
             <PropertyCarroussel status={"Aluguel"} idCompany={idCompany}/>
             </div>
 
-                <BlockHome idCompany={idCompany} />
+                {/* <BlockHome idCompany={idCompany} /> */}
 
+            <Finance />
             {/* <ExploreIconsProperties idCompany={idCompany} /> */}
             <Footer idCompany={idCompany}/>
 
