@@ -6,7 +6,11 @@ import {BiCheckDouble} from "react-icons/bi";
 import { useParams } from "react-router-dom";
 
 export function Legalization() {
-    const {idCompany} = useParams()
+    const {idCompany} = useParams();
+
+    function handleContact(e) {
+        window.open(`https://wa.me/5521997476045`)
+    }
 
     return (
         <div className="Legalization">
@@ -66,7 +70,7 @@ export function Legalization() {
                             <h2>Avalie  <span>seu imóvel</span> com a gente</h2>
                 <h4>Facilite seu processo de negociação com uma avaliação profissional.</h4>
 
-                <button> <img src={Zap} alt="Imagem logo whatsapp" /> Entre em contato com a gente</button>
+                <button onClick={handleContact}> <img src={Zap} alt="Imagem logo whatsapp" /> Entre em contato com a gente</button>
 
                 {/* <div className="stepesList">
                 <div className="stepeUnic">
