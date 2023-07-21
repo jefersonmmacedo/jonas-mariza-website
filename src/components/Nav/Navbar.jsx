@@ -180,7 +180,7 @@ const Navbar2 = () => {
   @media (max-width: 650px) {
 
   .logo a img {
-    height: 30px;
+    height: 25px;
   }
 
   @media (max-width: 600px) {
@@ -193,10 +193,19 @@ const Navbar2 = () => {
 
   .account .iconUnicAdm {
     font-size:10px;
+    padding: 5px 20px;
+    margin: 3px;
 }
+
+.account .iconUnicAdm img {
+  height: 15px;
+  margin-right: 3px;
+ }
 
 .account .iconUnicAdm2 {
   font-size:10px;
+  padding: 5px 20px;
+  margin: 3px;
 }
 
   }
@@ -225,7 +234,7 @@ const Navbar2 = () => {
       <Burger/>
       <div className="account">
       <button className='iconUnicAdm' onClick={() => HandleOpenLink2(`https://wa.me/5521997476045`)}> <img src={Zap} alt="" /> Fale conosco</button>               
-      <button className='iconUnicAdm2' onClick={() => HandleOpenLink2(`https://wa.me/5521997476045`)}> Meu condomínio</button>               
+      <button className='iconUnicAdm2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
       </div>
     </Nav>
   )

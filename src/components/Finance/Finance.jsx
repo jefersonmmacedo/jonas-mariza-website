@@ -24,7 +24,7 @@ export function Finance() {
 
             <h2>Meu condomínio</h2>
             <h4> Acesse a sua área do condomínio e retire seu boleto e veja mais informações!</h4>
-            <a href="/avaliacao">Acessar minha área</a>
+            <a href="https://www.immobileweb.com.br/login/jonasemariza" target="_Blank">Acessar minha área</a>
                 </div>
             </div>
         </div>
