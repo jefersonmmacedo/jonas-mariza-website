@@ -1,0 +1,411 @@
+﻿.Administration {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Administration .topImageAdministration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px;
+    background-image: url("../../assets/images/background16.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: var(--White);
+}
+
+.Administration .topImageAdministration .back {
+    padding: 100px 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(0,0,0, 0.01), rgba(0,0,0, 0.8));
+}
+
+.Administration .topImageAdministration .back h1 {
+    font-size: 42px;
+    color: var(--White);
+    text-align: left;
+    font-weight: 700;
+}
+.Administration .topImageAdministration .back h3 {
+    color: var(--White);
+    text-align: left;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.Administration .financer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 10px;
+}
+
+
+.Administration .financer h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--Description);
+    text-align: center;
+}
+
+.Administration .financer span {
+    color: var(--Primary);
+}
+
+
+.Administration .financer h4 {
+    color: var(--Paragraph);
+    margin:10px;
+    text-align: center;
+}
+.Administration .financer .benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 900px;
+    flex-wrap: wrap;
+}
+.Administration .financer .benefits .benefitUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+.Administration .financer .benefits .benefitUnic svg {
+    font-size: 34px;
+    color: var(--Primary);
+}
+
+.Administration .financer .benefits .benefitUnic .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.Administration .financer .benefits .benefitUnic .text h5 {
+    color: var(--Paragraph);
+    font-weight: 700;
+}
+.Administration .financer .benefits .benefitUnic .text h6 {
+    margin: 5px 0;
+}
+
+
+
+
+.Administration .stepesFinances {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 40px 0;
+    background-color: var(--BorderHover);
+}
+
+ 
+.Administration .stepesFinances button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: var(--White);
+    font-weight:600;
+    color: var(--Primary);
+    font-size:14px;
+    margin:5px 5px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+}
+.Administration .stepesFinances button img {
+    height: 20px;
+    margin-right: 5px;
+    
+   }
+
+.Administration .stepesFinances h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--Description);
+    text-align: center;
+}
+.Administration .stepesFinances span {
+    color: var(--Primary);
+}
+.Administration .stepesFinances h4 {
+    color: var(--Paragraph);
+    margin:10px;
+    text-align: center;
+}
+.Administration .stepesFinances .stepesList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.Administration .stepesFinances .stepeUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+.Administration .stepesFinances .stepeUnic2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Administration .stepesFinances .stepeUnic h1 {
+    font-weight: 900;
+    font-size: 65px;
+    color: var(--BorderInput);
+}
+.Administration .stepesFinances .stepeUnic2 h1 {
+    font-weight: 900;
+    font-size: 65px;
+    color: var(--BorderInput);
+}
+
+.Administration .stepesFinances .stepeUnic .textStepe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Administration .stepesFinances .stepeUnic2 .textStepe2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Administration .stepesFinances .stepeUnic .textStepe h4 {
+    color: var(--Primary);
+    font-weight: 800;
+    text-align: left;
+}
+.Administration .stepesFinances .stepeUnic .textStepe h5 {
+    margin:-10px 10px;
+    text-align: left;
+}
+.Administration .stepesFinances .stepeUnic2 .textStepe2 h4 {
+    color: var(--Primary);
+    font-weight: 800;
+    text-align: right;
+}
+.Administration .stepesFinances .stepeUnic2 .textStepe2 h5 {
+    margin:-10px 10px;
+    text-align: right;
+}
+
+
+
+.Administration .bank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../assets/images/background12.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: var(--White);
+}
+
+.Administration .bank .back2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0, 0.9));
+}
+
+.Administration .bank .back2 h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--White);
+    text-align: center;
+}
+.Administration .bank .back2 h4 {
+    color: var(--White);
+    margin:10px;
+    text-align: center;
+}
+
+.Administration .bank .back2 .logosBank {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Administration .bank .back2 .logosBank .logoUnicBank {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--White);
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Administration .bank .back2 .logosBank .logoUnicBank .imageBank{
+   width: 80px;
+}
+
+@media (max-width: 1200px) {
+    .Administration .stepesFinances .stepesList {
+        width: 90%;
+    }
+@media (max-width: 1050px) {
+    .Administration .topImageAdministration .back {
+        padding: 50px 100px;
+    }
+
+    .Administration .stepesFinances .stepesList {
+        width: 100%;
+    }
+
+    .Administration .stepesFinances .stepeUnic {
+        width: 350px;
+    }
+    .Administration .stepesFinances .stepeUnic2 {
+        width: 350px;
+    }
+    
+
+    @media (max-width: 900px) {
+        .Administration .financer .benefits {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .Administration .financer .benefits .benefitUnic {
+            width: 300px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+    @media (max-width: 800px) {
+        .Administration .topImageAdministration .back {
+            padding: 50px;
+        }
+
+        .Administration .stepesFinances .stepeUnic {
+
+            width: 350px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .Administration .stepesFinances .stepeUnic2 {
+
+            width: 350px;
+            padding: 5px;
+            margin: 5px;
+        }
+        
+
+        @media (max-width: 750px) {
+
+            .Administration .stepesFinances .stepeUnic {
+                width: 300px;
+            }
+            .Administration .stepesFinances .stepeUnic2 {
+                width: 300px;
+            }
+
+
+        @media (max-width: 650px) {
+
+            .Administration .topImageAdministration {
+                height: 350px;
+            }
+            .Administration .topImageAdministration .back {
+                padding: 50px;
+            }
+            
+            .Administration .topImageAdministration .back h1 {
+                font-size: 32px;
+            }
+            .Administration .topImageAdministration .back h3 {
+
+                font-size: 18px;
+            }
+
+            .Administration .stepesFinances .stepeUnic {
+                width: 350px;
+            }
+            .Administration .stepesFinances .stepeUnic2 {
+                width: 350px;
+            }
+
+            @media (max-width: 480px) {
+                .Administration .topImageAdministration .back {
+                    padding: 40px 10px;
+                }
+
+                .Administration .bank {
+                    height: 100%;
+                }
+
+                .Administration .bank .back2 {
+                    padding: 20px;
+                    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0, 0.99));
+                }
+            }
+        }   
+    }
+    }
+    }
+    }
+    
+}

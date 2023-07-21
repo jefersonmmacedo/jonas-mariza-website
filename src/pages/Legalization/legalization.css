@@ -1,0 +1,411 @@
+﻿.Legalization {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Legalization .topImageLegalization {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px;
+    background-image: url("../../assets/images/background16.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: var(--White);
+}
+
+.Legalization .topImageLegalization .back {
+    padding: 100px 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(0,0,0, 0.01), rgba(0,0,0, 0.8));
+}
+
+.Legalization .topImageLegalization .back h1 {
+    font-size: 42px;
+    color: var(--White);
+    text-align: left;
+    font-weight: 700;
+}
+.Legalization .topImageLegalization .back h3 {
+    color: var(--White);
+    text-align: left;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.Legalization .financer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 10px;
+}
+
+
+.Legalization .financer h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--Description);
+    text-align: center;
+}
+
+.Legalization .financer span {
+    color: var(--Primary);
+}
+
+
+.Legalization .financer h4 {
+    color: var(--Paragraph);
+    margin:10px;
+    text-align: center;
+}
+.Legalization .financer .benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 900px;
+    flex-wrap: wrap;
+}
+.Legalization .financer .benefits .benefitUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+.Legalization .financer .benefits .benefitUnic svg {
+    font-size: 34px;
+    color: var(--Primary);
+}
+
+.Legalization .financer .benefits .benefitUnic .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.Legalization .financer .benefits .benefitUnic .text h5 {
+    color: var(--Paragraph);
+    font-weight: 700;
+}
+.Legalization .financer .benefits .benefitUnic .text h6 {
+    margin: 5px 0;
+}
+
+
+
+
+.Legalization .stepesFinances {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 40px 0;
+    background-color: var(--BorderHover);
+}
+
+ 
+.Legalization .stepesFinances button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: var(--White);
+    font-weight:600;
+    color: var(--Primary);
+    font-size:14px;
+    margin:5px 5px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+}
+.Legalization .stepesFinances button img {
+    height: 20px;
+    margin-right: 5px;
+    
+   }
+
+.Legalization .stepesFinances h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--Description);
+    text-align: center;
+}
+.Legalization .stepesFinances span {
+    color: var(--Primary);
+}
+.Legalization .stepesFinances h4 {
+    color: var(--Paragraph);
+    margin:10px;
+    text-align: center;
+}
+.Legalization .stepesFinances .stepesList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.Legalization .stepesFinances .stepeUnic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+.Legalization .stepesFinances .stepeUnic2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Legalization .stepesFinances .stepeUnic h1 {
+    font-weight: 900;
+    font-size: 65px;
+    color: var(--BorderInput);
+}
+.Legalization .stepesFinances .stepeUnic2 h1 {
+    font-weight: 900;
+    font-size: 65px;
+    color: var(--BorderInput);
+}
+
+.Legalization .stepesFinances .stepeUnic .textStepe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Legalization .stepesFinances .stepeUnic2 .textStepe2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Legalization .stepesFinances .stepeUnic .textStepe h4 {
+    color: var(--Primary);
+    font-weight: 800;
+    text-align: left;
+}
+.Legalization .stepesFinances .stepeUnic .textStepe h5 {
+    margin:-10px 10px;
+    text-align: left;
+}
+.Legalization .stepesFinances .stepeUnic2 .textStepe2 h4 {
+    color: var(--Primary);
+    font-weight: 800;
+    text-align: right;
+}
+.Legalization .stepesFinances .stepeUnic2 .textStepe2 h5 {
+    margin:-10px 10px;
+    text-align: right;
+}
+
+
+
+.Legalization .bank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../assets/images/background12.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: var(--White);
+}
+
+.Legalization .bank .back2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0, 0.9));
+}
+
+.Legalization .bank .back2 h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--White);
+    text-align: center;
+}
+.Legalization .bank .back2 h4 {
+    color: var(--White);
+    margin:10px;
+    text-align: center;
+}
+
+.Legalization .bank .back2 .logosBank {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Legalization .bank .back2 .logosBank .logoUnicBank {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--White);
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Legalization .bank .back2 .logosBank .logoUnicBank .imageBank{
+   width: 80px;
+}
+
+@media (max-width: 1200px) {
+    .Legalization .stepesFinances .stepesList {
+        width: 90%;
+    }
+@media (max-width: 1050px) {
+    .Legalization .topImageLegalization .back {
+        padding: 50px 100px;
+    }
+
+    .Legalization .stepesFinances .stepesList {
+        width: 100%;
+    }
+
+    .Legalization .stepesFinances .stepeUnic {
+        width: 350px;
+    }
+    .Legalization .stepesFinances .stepeUnic2 {
+        width: 350px;
+    }
+    
+
+    @media (max-width: 900px) {
+        .Legalization .financer .benefits {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .Legalization .financer .benefits .benefitUnic {
+            width: 300px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+    @media (max-width: 800px) {
+        .Legalization .topImageLegalization .back {
+            padding: 50px;
+        }
+
+        .Legalization .stepesFinances .stepeUnic {
+
+            width: 350px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .Legalization .stepesFinances .stepeUnic2 {
+
+            width: 350px;
+            padding: 5px;
+            margin: 5px;
+        }
+        
+
+        @media (max-width: 750px) {
+
+            .Legalization .stepesFinances .stepeUnic {
+                width: 300px;
+            }
+            .Legalization .stepesFinances .stepeUnic2 {
+                width: 300px;
+            }
+
+
+        @media (max-width: 650px) {
+
+            .Legalization .topImageLegalization {
+                height: 350px;
+            }
+            .Legalization .topImageLegalization .back {
+                padding: 50px;
+            }
+            
+            .Legalization .topImageLegalization .back h1 {
+                font-size: 32px;
+            }
+            .Legalization .topImageLegalization .back h3 {
+
+                font-size: 18px;
+            }
+
+            .Legalization .stepesFinances .stepeUnic {
+                width: 350px;
+            }
+            .Legalization .stepesFinances .stepeUnic2 {
+                width: 350px;
+            }
+
+            @media (max-width: 480px) {
+                .Legalization .topImageLegalization .back {
+                    padding: 40px 10px;
+                }
+
+                .Legalization .bank {
+                    height: 100%;
+                }
+
+                .Legalization .bank .back2 {
+                    padding: 20px;
+                    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0, 0.99));
+                }
+            }
+        }   
+    }
+    }
+    }
+    }
+    
+}
