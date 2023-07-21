@@ -14,7 +14,10 @@ export function PropertyCarroussel({status}) {
     const idCompany = process.env.REACT_APP_CODEUSER
     console.log(idCompany);
 
-    const {data} = useFetch(`/property/companystatus/${availability}/${status}/${idCompany}?page=${currentPage}&limit=${perPage}`);
+    const {data} = useFetch(
+        //`/property/companystatus/${availability}/${status}/${idCompany}?page=${currentPage}&limit=${perPage}`
+        `/property/all/${availability}?emphasis=false&page=${currentPage}&limit=${perPage}`
+    );
 
     if(data) {
         console.log(data)
