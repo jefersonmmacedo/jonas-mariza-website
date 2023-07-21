@@ -12,7 +12,7 @@
     justify-content: flex-end;
     width: 100%;
     height: 500px;
-    background-image: url("../../assets/images/background17.jpg"); /* The image used */
+    background-image: url("../../assets/images/background7.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -59,7 +59,7 @@
 }
 .About .aboutInfos .ImagesAbout .imageAbout1 {
     width: 250px;
-    height: 400px;
+    height: 300px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
     position: absolute;
@@ -69,13 +69,13 @@
 }
 .About .aboutInfos .ImagesAbout .imageAbout1 img {
     width: 250px;
-    height: 400px;
+    height: 300px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
 }
 .About .aboutInfos .ImagesAbout .imageAbout2 {
     width: 250px;
-    height: 400px;
+    height: 300px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
     position: absolute;
@@ -85,7 +85,7 @@
 }
 .About .aboutInfos .ImagesAbout .imageAbout2 img {
     width: 250px;
-    height: 400px;
+    height: 300px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
 }

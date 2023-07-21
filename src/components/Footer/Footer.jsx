@@ -80,6 +80,7 @@ export function Footer() {
         flex-direction: row;
         margin-bottom: 5px;
         font-weight: 700;
+        font-size: 12px;
     }
     .sections .sectionUnic h5 a {
         font-weight:400;

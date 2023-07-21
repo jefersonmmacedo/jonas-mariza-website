@@ -61,14 +61,15 @@ export function About() {
                 </div>
                 <div className="TextAboutInfo">
                     <h2>Saiba mais</h2>
-                    <h5>{webSiteClient?.history}</h5>
+                    <h5>Fundada e XXXX soos referência na cidade de Rio Bonito e região, na venda de imóveis e admnistração de condomínios.</h5>
                         <div className="BlockInfosAbout">
                             <div className="svgInfo">
                                 <FiCheckCircle />
                             </div>
                             <div className="BlockInfosText">
                                 <h4>Nossa missão</h4>
-                                <h5>{webSiteClient?.mission}</h5>
+                                <h5>Ser intermediadora e facilitadora de bons negócios, que levem a prosperidade, o bem estar e lucros aos clientes. <br />
+                                Administrando e gerindo condomínios trazendo conforto e tranquilidade para todas as partes.</h5>
                                 </div>
                         </div>
                         <div className="BlockInfosAbout">
@@ -77,7 +78,7 @@ export function About() {
                             </div>
                             <div className="BlockInfosText">
                                 <h4>Nossa visão</h4>
-                                <h5>{webSiteClient?.vision}</h5>
+                                <h5>Ser uma empresa de referência na região na área de negócios, que contribua para o desenvolvimento social com a responsabilidade ambiental.</h5>
                                 </div>
                         </div>
                         <div className="BlockInfosAbout">
@@ -86,7 +87,7 @@ export function About() {
                             </div>
                             <div className="BlockInfosText">
                                 <h4>Nossos valores</h4>
-                                <h5>{webSiteClient?.values}</h5>
+                                <h5>Ser ética com seus parceiros e clientes, respeitando as normas e os contratos pré-estabelecidos.</h5>
                                 </div>
                         </div>
                 </div>

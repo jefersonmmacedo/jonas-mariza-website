@@ -13,8 +13,8 @@ export function Legalization() {
             <Navbar2 idCompany={idCompany}/>
             <div className="topImageLegalization">
                 <div className="back">
-            <h1>Nós temos o imóvel dos seus sonhos!</h1>
-                <h3>E também as melhores oções de financiamento.</h3>
+            <h1>Legalização de imóveis</h1>
+                <h3>Conheça como podemos te ajudar e cada passo da legalização</h3>
                 </div>
             </div>
 

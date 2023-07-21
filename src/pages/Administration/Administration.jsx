@@ -13,8 +13,8 @@ export function Administration() {
             <Navbar2 idCompany={idCompany}/>
             <div className="topImageAdministration">
                 <div className="back">
-            <h1>Nós temos o imóvel dos seus sonhos!</h1>
-                <h3>E também as melhores oções de financiamento.</h3>
+            <h1>Administração de condomínios</h1>
+                <h3>Tenha a tranquilidade de ter seu condomínio gerido por quem é referencia na região.</h3>
                 </div>
             </div>
 

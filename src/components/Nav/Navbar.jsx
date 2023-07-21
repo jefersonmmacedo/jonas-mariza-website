@@ -191,6 +191,14 @@ const Navbar2 = () => {
       display: none;
   }
 
+  .account .iconUnicAdm {
+    font-size:10px;
+}
+
+.account .iconUnicAdm2 {
+  font-size:10px;
+}
+
   }
   }
 }
