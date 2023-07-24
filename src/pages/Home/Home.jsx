@@ -12,6 +12,7 @@ import api from "../../services/api";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Finance } from "../../components/Finance/Finance";
+import NavbarHome from "../../components/NavHome/Navbar";
 
 export function Home() {
     const idCompany = process.env.REACT_APP_CODEUSER
@@ -357,7 +358,7 @@ export function Home() {
   `
     return (
         <Div >
-            <Navbar2 idCompany={idCompany}/>
+            <NavbarHome idCompany={idCompany}/>
             <TopHeadHome idCompany={idCompany}/>
             <ProcessProperty idCompany={idCompany}/>
             <div className="textFeature">

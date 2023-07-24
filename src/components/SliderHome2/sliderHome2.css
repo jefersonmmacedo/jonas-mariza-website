@@ -5,18 +5,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  height: 600px; /* You must set a specified height */
+  height: 500px; /* You must set a specified height */
 }
 
 .each-slide-effect .imageTop2 .image {
   width: 100%;
-  height: 600px;
+  height: 500px;
   object-fit:cover ;
   
 }
 .each-slide-effect .imageTop2 .image img {
   width: 100%;
-  height: 600px;
+  height: 500px;
   object-fit:cover ;
 }
 
@@ -58,7 +58,7 @@
 .each-slide-effect .imageTop2 .blockSlider2 h3 {
   color: var(--Paragraph);
   font-weight: 700;
-  margin: 10px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
 }
 .each-slide-effect .imageTop2 .blockSlider2 a {
   text-decoration: none;
@@ -71,82 +71,134 @@
   color: var(--Gray);
   margin: 0 10px;
 }
-.each-slide-effect .imageTop2 .blockSlider2 .icons {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 5px 3px;
-  flex-wrap: wrap;
+
+  .each-slide-effect .imageTop2 .blockSlider2 .iconsBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 7px 5px 5px 5px; 
+    padding: 0px;
+    flex-wrap: wrap;
+
 }
 
-.each-slide-effect .imageTop2 .blockSlider2 .icons .iconUnic {
-  width: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-  padding: 5px;
-  margin: 2px;
-  color: var(--Gray);
+.each-slide-effect .imageTop2 .blockSlider2 .iconsBox .iconUnicBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 0px;
+    color: var(--Gray);
 }
-.each-slide-effect .imageTop2 .blockSlider2 .icons .iconUnic  svg {
-  font-size: 18px;
-  margin-right: 10px;
-  color: var(--Primary);
+.each-slide-effect .imageTop2 .blockSlider2 .iconsBox .iconUnicBox svg {
+    font-size: 18px;
+    margin-right: 5px;
+    color: var(--Primary);
+    margin-top: -2px;
+
 }
 
-.each-slide-effect .imageTop2 .blockSlider2 .icons .iconUnic .simbol {
+.each-slide-effect .imageTop2 .blockSlider2 .iconsBox .iconUnicBox .simbolBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 1px;
+}
+.each-slide-effect .imageTop2 .blockSlider2 .iconsBox .iconUnicBox .simbolBox  p {
+    color: var(--Gray);
+    font-weight: 600;
+    font-size: 10px;
+}
+
+
+
+.each-slide-effect .imageTop2 .blockSlider2  .pricing {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  text-align: center;
+  justify-content: space-between;
+  text-align: flex-start;
   margin-top: 5px;
 }
 
-.each-slide-effect .imageTop2 .blockSlider2 .icons .iconUnic .simbol p {
+.each-slide-effect .imageTop2 .blockSlider2  .pricing h6 {
   color: var(--Gray);
-  font-weight: 600;
-}
-
-.each-slide-effect .imageTop2 .blockSlider2 .pricing {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  font-weight: 800;
+  margin: 0 5px;
   text-align: flex-start;
 }
-
-.each-slide-effect .imageTop2 .blockSlider2 .pricing h5 {
-  color: var(--Gray);
-  font-weight: 800;
-  margin: 5px 10px;
-}
-.each-slide-effect .imageTop2 .blockSlider2 .pricing span {
+.each-slide-effect .imageTop2 .blockSlider2  .pricing h6 span {
   font-weight: 500;
+  color: var(--Gray);
 }
-.each-slide-effect .imageTop2 .blockSlider2 .pricing h2 {
-  color: var(--Paragraph);
+.each-slide-effect .imageTop2 .blockSlider2  .pricing h3 {
+  color: var(--Primary);
   font-weight: 400;
-  margin: 0 10px;
-  font-size: 20px;
+  margin: 2px 5px 2px 5px;
+  text-align: flex-end;
+      width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
-.each-slide-effect .imageTop2 .blockSlider2 .pricing h2 span {
+.each-slide-effect .imageTop2 .blockSlider2  .pricing span {
+  color: var(--Primary);
   font-weight: 800;
 }
-
+.each-slide-effect .imageTop2 .blockSlider2  .pricing h4 {
+  color: var(--Primary);
+  font-weight: 400;
+  margin: 0px 0px 0px 5px;
+  text-align: flex-end;
+      width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.each-slide-effect .imageTop2 .blockSlider2  .pricing h4 span {
+  color: var(--Primary);
+  font-weight: 800;
+}
 
 @media (max-width: 1160px) {
   .each-slide-effect .imageTop2 .blockSlider2 {
     width: 500px;
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 950px) {
+
+    .each-slide-effect .imageTop2 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      height: 350px; /* You must set a specified height */
+      margin: 0px;
+    }
+    
+    .each-slide-effect .imageTop2 .image {
+      width: 100%;
+      height: 350px;
+      object-fit:cover ;
+      
+    }
+    .each-slide-effect .imageTop2 .image img {
+      width: 100%;
+      height: 350px;
+      object-fit:cover ;
+    }
+
     .each-slide-effect .imageTop2 .blockSlider2 {
       width: 400px;
       padding: 20px;
@@ -168,12 +220,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 600px; /* You must set a specified height */
   }
   .each-slide-effect .imageTop2 .blockSlider2 {
     width: 450px;
       margin: 10px;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.8);
   }
 @media (max-width: 530px) {
   .each-slide-effect .imageTop2 .blockSlider2 {
@@ -194,14 +245,9 @@
 
       @media (max-width: 430px) {
         .each-slide-effect .imageTop2 .blockSlider2 {
-          width: 350px;
+          width: 300px;
         }
 
-        @media (max-width: 390px) {
-          .each-slide-effect .imageTop2 .blockSlider2 {
-            width: 320px;
-          }
-          }
         }
   }
 }

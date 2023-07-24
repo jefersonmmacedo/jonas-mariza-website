@@ -1,6 +1,6 @@
 ﻿import "./footer.css";
-import logoSuaChave from '../../assets/images/LogoSuaChave.png';
-import logo from '../../assets/images/logo1.png'
+import logoSuaChave from '../../assets/images/LogoSuaChave2.png';
+import logo from '../../assets/images/logo2.png'
 import styled from 'styled-components';
 import {IoCallOutline, IoLogoWhatsapp, IoMailOutline, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoLogoLinkedin, IoLogoYoutube, IoLocationOutline, IoSendOutline, IoPhonePortraitOutline} from 'react-icons/io5';
 import {AiOutlineSend} from 'react-icons/ai';
@@ -34,8 +34,8 @@ export function Footer() {
         width: 100%;
         padding: 20px;
         border: none;
-        background-color: var(--White);
-        color: var(--Paragraph);
+        background-color: var(--Primary);
+        color: var(--White);
         border-top: 2px solid var(--BorderInput);
      
     .sections {
@@ -85,13 +85,13 @@ export function Footer() {
     .sections .sectionUnic h5 a {
         font-weight:400;
         text-decoration: none;
-        color: var(--Paragraph);
+        color: var(--White);
         font-weight: 700;
     }
     .sections .sectionUnic h5 svg {
         font-weight:400;
         margin-right: 5px;
-        color: var(--Paragraph);
+        color: var(--White);
     }
     .sections .sectionUnic h5 a:hover {
         color: var(--Primary);
@@ -209,7 +209,7 @@ export function Footer() {
     }
     
     .copy h5 {
-        color: var(--Paragraph);
+        color: var(--White);
         font-weight: 700;
         
     }
@@ -232,7 +232,7 @@ export function Footer() {
         padding: 10px;
     }
     .copy .dev h5 {
-        color: var(--Paragraph);
+        color: var(--White);
         font-weight: 700;
         margin-right: 5px;
         

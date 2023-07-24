@@ -6,7 +6,7 @@ import { AuthContext } from '../../contexts/Auth';
 import { useContext, useEffect, useState } from 'react';
 import api from '../../services/api';
 
-const Navbar2 = () => {
+const NavbarHome = () => {
   const { logout } = useContext(AuthContext);
 
   const Nav = styled.nav`
@@ -14,7 +14,7 @@ const Navbar2 = () => {
   height: 65px;
   border-bottom: 1px solid #f1f1f1;
   padding: 0 20px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -32,7 +32,7 @@ const Navbar2 = () => {
     padding: 15px 0;
   }
   .logo a img {
-    height: 55px;
+    height: 45px;
   }
   .logo2 {
     display: none;
@@ -170,6 +170,23 @@ const Navbar2 = () => {
 
 
 @media (max-width: 950px) {
+
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 97;
+  // background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255);
+  backdrop-filter: blur(4px);
+  font-size: 14px;
+  color: var(--Description)
+
   padding: 0 10px;
   .account {
     margin-right:40px;
@@ -240,4 +257,4 @@ const Navbar2 = () => {
   )
 }
 
-export default Navbar2
+export default NavbarHome

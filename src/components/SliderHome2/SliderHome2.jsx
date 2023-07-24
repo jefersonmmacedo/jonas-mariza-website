@@ -1,9 +1,9 @@
 import "./sliderHome2.css";
-import {IoCrop, IoArrowBack, IoArrowForward, IoLocationOutline, IoBedOutline, IoCarSportOutline} from 'react-icons/io5';
-import {TfiRulerAlt2} from 'react-icons/tfi';
+import {IoCrop, IoArrowBack, IoArrowForward, IoLocationOutline, IoBedOutline, IoCarSportOutline, IoHomeOutline} from 'react-icons/io5';
 import {MdOutlineShower} from 'react-icons/md';
-import {TbBath} from 'react-icons/tb';
-
+import { TbBath, TbBone, TbSofa } from "react-icons/tb";
+import { GiHomeGarage } from "react-icons/gi";
+import { TfiRulerAlt2 } from "react-icons/tfi";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { useFetch } from "../../hooks/useFetch";
@@ -65,60 +65,144 @@ const properties = {
                     </div>
                     : ""
                     } 
+                    <h5>{property.subType}</h5>
                      <a href={`/imovel/${property.id}`}>
-                    <h3>{property.title}</h3>
+                    <h3>{property.district} - {property.city} - {property.uf}</h3>
                     </a>
-                    <h5><IoLocationOutline /> {property.road} - {property.district} - {property.city} - {property.uf}</h5>
-                    <div className="icons">
-                    {property.bedroom === "" ? "" :
-                        <div className="iconUnic">
-                                <IoBedOutline />
-                            <div className="simbol">
-                            <p>{property.bedroom} Quartos</p>
-                            </div>
-                        </div>
-                    }
-                        {property.suite === "" ? "" :
-                        <div className="iconUnic">
-                                <TbBath />
-                            <div className="simbol">
-                            <p>{property.suite} Suítes</p>
-                            </div>
-                        </div>
-                        }
-                        {property.restroom === "" ? "" :
-                        <div className="iconUnic">
-                                <MdOutlineShower />
-                            <div className="simbol">
-                            <p>{property.restroom} Banheiro</p>
-                            </div>
-                        </div>
-                        }
-                        {property.garage === "" ? "" :
-                        <div className="iconUnic">
-                                <IoCarSportOutline />
-                            <div className="simbol">
-                                <p>{property.garage} Vagas</p>
-                            </div>
-                        </div>
-                        }
-                        {property.totalArea === "" ? "" :
-                        <div className="iconUnic">
+                    {
+                    property?.type === "Terrenos e Lotes" ?
+                     <div className="iconsBox">                  
+                        {property?.totalArea === "" ? "" :
+                        <div className="iconUnicBox">
                                 <TfiRulerAlt2 />
-                            <div className="simbol">
-                                <p>{property.totalArea} M<sup>2</sup></p>
+                            <div className="simbolBox">
+                                <p>{property?.totalArea} M<sup>2</sup></p>
                             </div>
                         </div>
                             }
-                        {property.buildingArea === "" ? "" :
-                        <div className="iconUnic">
+                        {property?.buildingArea === "" ? "" :
+                        <div className="iconUnicBox">
                                 <IoCrop />
-                            <div className="simbol">
-                                <p>{property.buildingArea} M<sup>2</sup></p>
+                            <div className="simbolBox">
+                                <p>{property?.buildingArea} M<sup>2</sup></p>
                             </div>
                         </div>
                         }
+
+                     </div>
+                     :
+                    property?.type === "Rural" ?
+                     <div className="iconsBox">  
+                      {property?.bedroom === "" || property?.bedroom === "0"? "" :
+                        <div className="iconUnicBox">
+                                <IoBedOutline />
+                            <div className="simbolBox">
+                                <p>{property?.bedroom} {property?.bedroom === "1" ? " Quarto" : " Quartos"}</p>
+                            </div>
+                        </div>
+                        }                
+                        {property?.totalArea === "" ? "" :
+                        <div className="iconUnicBox">
+                                <TfiRulerAlt2 />
+                            <div className="simbolBox">
+                                <p>{property?.totalArea} M<sup>2</sup></p>
+                            </div>
+                        </div>
+                            }
+                        {property?.buildingArea === "" ? "" :
+                        <div className="iconUnicBox">
+                                <IoCrop />
+                            <div className="simbolBox">
+                                <p>{property?.buildingArea} M<sup>2</sup></p>
+                            </div>
+                        </div>
+                        }
+
+                     </div>
+                     :
+                    property?.type === "Comercial" || property?.type === "Industrial" ?
+                     <div className="iconsBox">  
+                      {property?.restroom === "" || property?.restroom === "0"? "" :
+                        <div className="iconUnicBox">
+                                <MdOutlineShower />
+                            <div className="simbolBox">
+                                <p>{property?.restroom} {property?.restroom === "1"  ? " Banheiro" : " Banheiros"}</p>
+                            </div>
+                        </div>
+                        }               
+                        {property?.totalArea === "" ? "" :
+                        <div className="iconUnicBox">
+                                <TfiRulerAlt2 />
+                            <div className="simbolBox">
+                                <p>{property?.totalArea} M<sup>2</sup></p>
+                            </div>
+                        </div>
+                            }
+                        {property?.buildingArea === "" ? "" :
+                        <div className="iconUnicBox">
+                                <IoCrop />
+                            <div className="simbolBox">
+                                <p>{property?.buildingArea} M<sup>2</sup></p>
+                            </div>
+                        </div>
+                        }
+
+                     </div>
+                     :
+                    <div className="iconsBox">
+                    {property?.bedroom === "" || property?.bedroom === "0"? "" :
+                        <div className="iconUnicBox">
+                                <IoBedOutline />
+                            <div className="simbolBox">
+                                <p>{property?.bedroom} {property?.bedroom === "1" ? " Quarto" : " Quartos"}</p>
+                            </div>
+                        </div>
+                        }
+                        {property?.restroom === "" || property?.restroom === "0"? "" :
+                        <div className="iconUnicBox">
+                                <MdOutlineShower />
+                            <div className="simbolBox">
+                                <p>{property?.restroom} {property?.restroom === "1" ? " Banheiro" : " Banheiros"}</p>
+                            </div>
+                        </div>
+                        }
+                        {/* {property?.suite === "" || property?.suite === "0" ? "" :
+                        <div className="iconUnicBox">
+                                <TbBath />
+                            <div className="simbolBox">
+                                <p>{property?.suite} Suítes</p>
+                            </div>
+                        </div>
+                        } */}
+                         {property?.garage === "" || property?.garage === "0" ? "" :
+                        <div className="iconUnicBox">
+                                <GiHomeGarage />
+                            <div className="simbolBox">
+                                <p>{property?.garage} {property?.garage === "1" ? " Vaga" : " Vagas"}</p>
+                            </div>
+                        </div>
+                        }
+                        {/* {property?.pets === "Não" || property?.pets === "" ? "" :
+                        <div className="iconUnicBox">
+                                <TbBone />
+                            <div className="simbolBox">
+                            <p>Aceita pets</p>
+                            </div>
+                        </div>
+                        }
+                         {property?.furnished === "Não" || property?.furnished === ""? "" :
+                        <div className="iconUnicBox">
+                                <TbSofa />
+                            <div className="simbolBox">
+                                <p>Mobilhado</p>
+                            </div>
+                        </div>
+                        } */}
+
+
+
                     </div>
+                    }
                     <div className="pricing">
                         <h5>{property.status} {property.textRent !==  "" ? "/" : "" }<span> {property.textRent}</span></h5>
                         <h2>R$ <span>{property.status === "Venda" ? property.priceSale : property.priceRent}</span></h2>

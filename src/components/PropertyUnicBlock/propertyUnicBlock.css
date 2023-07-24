@@ -179,7 +179,12 @@ margin-top: -20px;
 }
 .PropertyUnicBlock .text .textInfos h4 {
     color: var(--Paragraph);
-    font-weight: 700;
+    font-weight: 900;
+    margin: 0px 5px 0px 5px;
+}
+.PropertyUnicBlock .text .textInfos h4:hover {
+    color: var(--Primary);
+    font-weight: 900;
     margin: 0px 5px 0px 5px;
 }
 .PropertyUnicBlock .text .textInfos h5 {
@@ -197,7 +202,7 @@ margin-top: -20px;
     align-items: flex-start;
     justify-content: flex-start;
     color: var(--Gray);
-    margin: 15px 5px 0px 5px; 
+    margin: 45px 5px 0px 5px; 
     font-weight: 600;
 }
 .PropertyUnicBlock .text .iconsBox {
@@ -225,7 +230,7 @@ margin-top: -20px;
 .PropertyUnicBlock .text .iconsBox .iconUnicBox svg {
     font-size: 18px;
     margin-right: 5px;
-    color: var(--Paragraph);
+    color: var(--Primary);
     margin-top: -2px;
 
 }
@@ -266,7 +271,7 @@ margin-top: -20px;
     color: var(--Gray);
 }
 .PropertyUnicBlock .text .pricing h3 {
-    color: var(--Paragraph);
+    color: var(--Primary);
     font-weight: 400;
     margin: 2px 5px 2px 5px;
     text-align: flex-end;
@@ -277,11 +282,11 @@ margin-top: -20px;
     justify-content: flex-end;
 }
 .PropertyUnicBlock .text .pricing span {
-    color: var(--Paragraph);
+    color: var(--Primary);
     font-weight: 800;
 }
 .PropertyUnicBlock .text .pricing h4 {
-    color: var(--Paragraph);
+    color: var(--Primary);
     font-weight: 400;
     margin: 0px 0px 0px 5px;
     text-align: flex-end;
@@ -292,7 +297,7 @@ margin-top: -20px;
     justify-content: flex-end;
 }
 .PropertyUnicBlock .text .pricing h4 span {
-    color: var(--Paragraph);
+    color: var(--Primary);
     font-weight: 800;
 }
 

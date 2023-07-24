@@ -1,6 +1,9 @@
 import "./propertyUnicBlock.css";
 import { IoBedOutline, IoCarSportOutline, IoChevronForwardOutline, IoCrop, IoHome, IoHomeOutline, IoLocationOutline, IoPawOutline } from "react-icons/io5";
 import { MdOutlineShower } from "react-icons/md";
+import { TbBath, TbBone, TbSofa } from "react-icons/tb";
+import { GiHomeGarage } from "react-icons/gi";
+import { TfiRulerAlt2 } from "react-icons/tfi";
 import slugify from 'react-slugify';
 import imageDefault from "../../assets/images/default.png"
 
@@ -10,9 +13,7 @@ import { SliderBox } from "../SliderBox/SliderBox";
 import api from "../../services/api";
 import { useEffect, useState } from "react";
 import { NewShareBox } from "../NewShareBox/NewShareBox";
-import { TbBath, TbBone, TbSofa } from "react-icons/tb";
-import { GiHomeGarage } from "react-icons/gi";
-import { TfiRulerAlt2 } from "react-icons/tfi";
+
 
 
 export function PropertyUnicBlock({id, style}) {
@@ -63,7 +64,7 @@ export function PropertyUnicBlock({id, style}) {
                     : ""
                     } 
                     <div className="infosPropertyButtons">
-                        <div className="status">
+                        {/* <div className="status">
                         <a href={`/imobiliaria/${nameSlug}`}>
                             <div className="image">
                                 <img src={property?.avatarCompany} alt={property?.nameCompany} />
@@ -72,15 +73,15 @@ export function PropertyUnicBlock({id, style}) {
                             <a href={`/imobiliaria/${nameSlug}`}>
                             <p>{company !== undefined ? company.slice(0,23) : company}</p>
                             </a>
-                        </div>
+                        </div> */}
                     <div className="infosButtons">
                   
                     {/* <div className="share">
                     <NewShareBox idProperty={property?.id} title={property?.title}/>
                     </div> */}
-                    <div className="heart2">
+                    {/* <div className="heart2">
                     <NewFavorite idProperty={property?.id} idCompany={property?.idCompany} page={"not"}/>
-                    </div>
+                    </div> */}
                     </div>
                     </div>
                     <div className="text">
@@ -89,6 +90,7 @@ export function PropertyUnicBlock({id, style}) {
                     <h6>{property?.subType}</h6>
                     {/* <h4>{StatusProperty !== undefined ? StatusProperty.slice(0,28) : StatusProperty}</h4> */}
                         </a>
+                        <a href={`/imovel/${property?.id}`}>
                     <h4>{property?.district === "" && property?.city === "" && property?.uf === ""?
                     <>
                      
@@ -100,6 +102,7 @@ export function PropertyUnicBlock({id, style}) {
                     </>
                     }
                    </h4>
+                    </a>
                     {/* <h5>{StatusProperty}</h5> */}
                     {/* <h6><IoHomeOutline/>{titleProperty?.slice(0,39)}</h6> */}
                     
