@@ -13,6 +13,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Finance } from "../../components/Finance/Finance";
 import NavbarHome from "../../components/NavHome/Navbar";
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 export function Home() {
     const idCompany = process.env.REACT_APP_CODEUSER
@@ -367,11 +368,13 @@ export function Home() {
             <div className="carroussel">
             <PropertyCarroussel status={"Venda"} idCompany={idCompany}/>
             </div>
-            <div className="textHome">
-            <h3>Imóveis para alugar</h3>
-            </div>
-            <div className="carroussel">
-            <PropertyCarroussel status={"Aluguel"} idCompany={idCompany}/>
+
+            <div className="linkDirect">
+            <a href="/imoveis">
+                <h4>
+                <IoArrowForwardOutline/> Ver todos os imóveis
+                </h4>
+                 </a>
             </div>
 
                 {/* <BlockHome idCompany={idCompany} /> */}

@@ -204,8 +204,17 @@ const properties = {
                     </div>
                     }
                     <div className="pricing">
-                        <h5>{property.status} {property.textRent !==  "" ? "/" : "" }<span> {property.textRent}</span></h5>
-                        <h2>R$ <span>{property.status === "Venda" ? property.priceSale : property.priceRent}</span></h2>
+                        <h6>{property?.status}</h6>
+                        {property?.priceSale === "" && property?.priceRent === ""  ?
+                        <h4><span>Consultar valor</span></h4>
+                        :
+                        property?.status === "Venda" ?
+                        <h4>R$ <span>{property?.priceSale}</span></h4>
+                        : property?.status === "Aluguel" ?
+                        <h4>R$ <span>{property?.priceRent}</span></h4>
+                        :  <h4>{property?.priceRent === "" ? "Consultar" : "R$"} <span>{property?.priceRent === "" ? "Consultar" : property?.priceRent}</span> /
+                        {property?.priceSale === "" ? " Consultar" : " R$"} <span>{property?.priceSale === "" ? "Consultar" : property?.priceSale}</span></h4>
+                        }
                     </div>
                 </div>
             </div>

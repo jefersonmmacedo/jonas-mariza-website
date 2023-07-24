@@ -6,6 +6,28 @@
     width: 1080px;
     text-align: left;
 }
+ .linkDirect {
+    width: 1080px;
+    text-align: left;
+    margin: 40px auto 0 auto;
+}
+
+.linkDirect a h4 {
+    color: var(--Primary);
+    background: var(--BorderInput);
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.linkDirect a  {
+    text-decoration: none;
+}
+
  .textFeature {
     width: 1080px;
     text-align: left;
@@ -220,6 +242,10 @@
 
      .textHome {
         width: 100%;
+    }
+
+    .linkDirect {
+        width: 90%;
     }
     @media (max-width: 970px) {
          .carroussel {

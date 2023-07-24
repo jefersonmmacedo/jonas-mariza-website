@@ -85,6 +85,7 @@
   .TopHeadHome .blockTop .SearchText .TextTopSearch h4 {
     font-weight: 500;
     color: var(--Gray);
+    text-align: center;
   }
 
   .TopHeadHome .blockTop .SearchText .TextTopSearch button {
@@ -285,6 +286,10 @@
         justify-content: center;
         margin: 30px auto 20px auto;
         flex-wrap: wrap;
+      }
+    
+      .TopHeadHome .blockTop .SearchText .TextTopSearch .textServices h3{
+        margin: 5px;
       }
     
 
