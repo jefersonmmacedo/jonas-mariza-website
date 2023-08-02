@@ -94,7 +94,7 @@ export function Footer() {
         color: var(--White);
     }
     .sections .sectionUnic h5 a:hover {
-        color: var(--Primary);
+        color: rgb(199,151,55);;
     }
     .sections .sectionUnic .newsletter {
         display: flex;
@@ -194,7 +194,7 @@ export function Footer() {
         font-size: 16px;
     }
     .sections .sectionUnic .network a:hover {
-        background-color: var(--Primary);
+        background-color: rgb(199,151,55);;
         color: var(--White);
     }
     .copy {
@@ -220,7 +220,7 @@ export function Footer() {
     
     }
     .copy h5 a:hover {
-        color: var(--Primary);
+        color: rgb(199,151,55);;
     }
     
     .copy .dev {
@@ -244,7 +244,7 @@ export function Footer() {
     
     }
     .copy .dev h5 a:hover {
-        color: var(--Primary);
+        color: rgb(199,151,55);;
     }
     
     .copy .dev a img {
@@ -356,8 +356,8 @@ export function Footer() {
 
                         <div className="sectionUnic">
                         <h3>ATENDIMENTO</h3>
-                            <h5><IoLogoWhatsapp />{company?.whatsapp}</h5>
-                            <h5><IoPhonePortraitOutline />{company?.phone}</h5>
+                            <h5><IoLogoWhatsapp />{company?.whatsapp} - Venda de Imóveis</h5>
+                            <h5><IoLogoWhatsapp />{company?.phone} - Administração de Condomínios</h5>
                             <h5><IoMailOutline />{company?.email}</h5>
                             <h5><IoLocationOutline />{company?.road}, Nº {company?.number}, {company?.district}</h5>
                             <h5>{company?.city} - {company?.uf}</h5>
