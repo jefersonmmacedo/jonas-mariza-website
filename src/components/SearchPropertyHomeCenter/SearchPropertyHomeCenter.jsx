@@ -163,12 +163,12 @@ export function SearchPropertyHomeCenter() {
 
     return (
         <div className="SearchPropertyHomeCenter">
-            <div className="selectButtonsHomeTop">
+            {/* <div className="selectButtonsHomeTop">
             <button className={status === "Venda" ? "btn" : "btn1"} onClick={() => handleActiveCode(false, "Venda", true)}>Venda</button>
             <button className={status === "Aluguel" ? "btn2" : ""} onClick={() => handleActiveCode(false, "Aluguel", true)}>Aluguel</button>
             <button className={status === "Locação" ? "btn2" : ""} onClick={() => handleActiveCode(false, "Locação", true)}>Locação</button>
             <button className={status === "Codigo" ? "btn3" : "btn4"} onClick={() => handleActiveCode(true, "Codigo", false)}>Código</button>
-                </div>   
+                </div>    */}
             <div className="search">
                 {code === false ?
                 <>
@@ -259,95 +259,13 @@ export function SearchPropertyHomeCenter() {
                     <input type="text" className="inputCode" placeholder="Digite o código" />
                     </>
                 }
-                    {viewFilter === true ?
-                     filter ===  true ?
-                     <button className="filter" onClick={handleFilter}><IoRemoveOutline/> filtros </button>
-                     :
-                     <button className="filter" onClick={handleFilter}><IoAddOutline/> filtros </button>
-                    
-                    :
-                    ""}
-                     {filter ===  true ? "" :
+
                      <button className="btnSearch" onClick={handleLinkSearchProperty}><IoSearch /></button>
-                    }
+                    
                     <button className="mobile" onClick={handleLinkSearchProperty}><IoSearch /></button>
             </div>
 
-            {filter === true ? 
-            <div className="viewFilter">
-                            <div className="search">
-                                 <select value={bedroom} onChange={handleBedroom} className={bedroom === "" ? "" : "select"}>
-                                    <option value="">Quartos</option>
-                                    <option value="1">1 Quarto</option>
-                                    <option value="2">2 Quartos</option>
-                                    <option value="3">3 Quartos</option>
-                                    <option value="4">4 Quartos</option>
-                                    <option value="5">5 Quartos</option>
-                                    <option value="6">6 Quartos</option>
-                                    <option value="7">7 Quartos</option>
-                                    <option value="8">8 Quartos</option>
-                                    <option value="9">9 Quartos</option>
-                                    <option value="10">10 Quartos</option>
-                                </select>
-                                 <select value={suite} onChange={handleSuite} className={suite === "" ? "" : "select"}>
-                                    <option value="">Suites</option>
-                                    <option value="1">1 Suite</option>
-                                    <option value="2">2 Suites</option>
-                                    <option value="3">3 Suites</option>
-                                    <option value="4">4 Suites</option>
-                                    <option value="5">5 Suites</option>
-                                    <option value="6">6 Suites</option>
-                                    <option value="7">7 Suites</option>
-                                    <option value="8">8 Suites</option>
-                                    <option value="9">9 Suites</option>
-                                    <option value="10">10 Suites</option>
-                                </select>
-            
-                                <select value={restroom} onChange={handleRestroom} className={restroom === "" ? "" : "select"}>
-                                    <option value="">Banheiros</option>
-                                    <option value="1">1 Banheiro</option>
-                                    <option value="2">2 Banheiros</option>
-                                    <option value="3">3 Banheiros</option>
-                                    <option value="4">4 Banheiros</option>
-                                    <option value="5">5 Banheiros</option>
-                                    <option value="6">6 Banheiros</option>
-                                    <option value="7">7 Banheiros</option>
-                                    <option value="8">8 Banheiros</option>
-                                    <option value="9">9 Banheiros</option>
-                                    <option value="10">10 Banheiros</option>
-                                </select>
-            
-                                <select value={garage} onChange={handleGarage} className={garage === "" ? "" : "select"}>
-                                    <option value="">Garagem</option>
-                                    <option value="1">1 Vaga</option>
-                                    <option value="2">2 Vagas</option>
-                                    <option value="3">3 Vagas</option>
-                                    <option value="4">4 Vagas</option>
-                                    <option value="5">5 Vagas</option>
-                                    <option value="6">6 Vagas</option>
-                                    <option value="7">7 Vagas</option>
-                                    <option value="8">8 Vagas</option>
-                                    <option value="9">9 Vagas</option>
-                                    <option value="10">10 Vagas</option>
-                                </select>
-            
 
-                                 <button className="btnSearch" onClick={handleLinkSearchProperty}><IoSearch /></button>
-                        </div>
-            </div>
-            :
-            ""}
-
-            <div className="textLocation">
-                <div className="checkDiv">
-                    <input type="checkbox" value={pets} onChange={handleSelectPets} checked={isCheckedPets}/>
-                    <h5><TbBone />Aceita pets</h5>
-                </div>
-                <div className="checkDiv">
-                    <input type="checkbox" value={furnished} onChange={handleSelectFurnished} checked={isCheckedFurnished}/>
-                    <h5><TbSofa />Com mobilha</h5>
-                </div>
-            </div>
 
             
       

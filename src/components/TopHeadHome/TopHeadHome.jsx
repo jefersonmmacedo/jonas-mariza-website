@@ -5,6 +5,7 @@ import Zap from '../../assets/images/zap.png'
 import { SliderHome } from "../SliderHome/SliderHome";
 import { SearchPropertyHomeTop2 } from "../SearchPropertyHomeTop2/SearchPropertyHomeTop2";
 import { SliderHome2 } from "../SliderHome2/SliderHome2";
+import { SearchPropertyHomeCenter } from "../SearchPropertyHomeCenter/SearchPropertyHomeCenter";
 
 export function TopHeadHome() {
 
@@ -25,19 +26,18 @@ export function TopHeadHome() {
             </div>
 
                 <div className="TextTopSearch">
-                <h1><span>Imobiliária e </span>administradora <span>de condomínios</span></h1>
+                <h1><span>Imobiliária e </span>Administradora <span>de Condomínios</span></h1>
                 <h4>Atuando tradicionalmente na cidade de Rio Bonito-RJ</h4>
 
                 <div className="textServices">
-                    <h3>Compra</h3>
-                    <h3>Venda</h3>
-                    <h3>Financiamento</h3>
-                    <h3>Legalização</h3>
-                    <h3>Administração de condomínios</h3>
+                    <h3>Compra e Venda de Imóveis</h3>
+                    <h3>Financiamento Imobiliário</h3>
+                    <h3>Legalização de Imóveis</h3>
+                    <h3>Administração de Condomínios</h3>
                 </div>
                 </div>
 
-                {/* <SearchPropertyHomeTop2 /> */}
+               
             </div>
 
             <div className="ImagesTop">
@@ -64,6 +64,7 @@ export function TopHeadHome() {
                 </div>
                 <div className="imagemSlider">
             <SliderHome2 />
+                 <SearchPropertyHomeCenter />
                 </div>
             </div>
             </div>
