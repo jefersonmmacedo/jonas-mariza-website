@@ -52,9 +52,9 @@ export function TopHeadHome() {
                         <h5>
                               <a href="/legalizacao">Legalização</a>
                         </h5>
-                        {/* <h5>
+                        <h5>
                               <a href="/administracao-de-condiminios">Administração de condomínios</a>
-                        </h5> */}
+                        </h5>
                     </div>
 
                     <div className="buttons">

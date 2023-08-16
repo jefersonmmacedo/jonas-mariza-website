@@ -323,7 +323,7 @@ export function Footer() {
                 <div className="sections">
                         <div className="sectionUnic">
                         <a href="/"><img src={logo} alt="" /></a>
-                            <h5><b>{company?.fantasyName}</b></h5>
+                            <h5><b>Emanuel Dario Alves</b></h5>
                             <h5> CRECI: <b>{company?.creci}</b></h5>
                             <br />
                             <div className="network">
@@ -349,9 +349,9 @@ export function Footer() {
                             <h3>NAVEGAÇÃO</h3>
                                 <h5><a href="/sobre">Quem somos</a></h5>
                                 <h5><a href="/imoveis/all">Imóveis</a></h5>
-                                {/* <h5><a href="/corretores">Corretores</a></h5> */}
-                                <h5><a href="/financiamento">Financiamento</a></h5>
-                                <h5><a href="/avaliacao">Avaliação</a></h5>
+                                <h5><a href="/corretores">Legalização</a></h5>
+                                <h5><a href="/financiamento">Administração de Condomínios</a></h5>
+                                {/* <h5><a href="/avaliacao">Avaliação</a></h5> */}
                         </div>
 
                         <div className="sectionUnic">
