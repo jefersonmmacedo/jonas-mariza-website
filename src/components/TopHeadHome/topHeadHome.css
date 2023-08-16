@@ -5,11 +5,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh; 
-    background-image: url("../../assets/images/background10.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+ /* Resize the background image to cover the entire container */
   }
   .TopHeadHome .blockTop{
     width: 100%;
@@ -18,7 +14,7 @@
     align-items: flex-start;
     justify-content: space-between;
     height: 100%; 
-    background-color: var(--White);
+    background-color: var(--Primary);
     /* background-color: rgba(255,255,255,0.9); */
     backdrop-filter: blur(5px);
     padding: 0;
@@ -62,7 +58,7 @@
 
   /* .TopHeadHome .blockTop .SearchText .TextTopSearch h1 {
     font-weight: 800;
-    color: var(--Description);
+    color: var(--White);
     font-size: 45px;
     line-height: 2.8rem;
     margin-bottom:10px;
@@ -74,24 +70,24 @@
     line-height: 2.0rem;
     margin-bottom:10px;
     text-align: center;
-    color: var(--Primary);
+    color: var(--White);
   }
 
   .TopHeadHome .blockTop .SearchText .TextTopSearch h1 span {
-    color: var(--Primary);
+    color: var(--White);
     text-align: center;
   }
 
   .TopHeadHome .blockTop .SearchText .TextTopSearch h4 {
     font-weight: 500;
-    color: var(--Gray);
+    color: var(--White);
     text-align: center;
   }
 
   .TopHeadHome .blockTop .SearchText .TextTopSearch button {
     border: none;
     border-radius: 6px;
-    background-color: var(--Primary);
+    background-color: var(--White);
     color: var(--White);
     padding: 10px 20px;
     margin-top: 20px;
@@ -109,7 +105,7 @@
 
   .TopHeadHome .blockTop .SearchText .TextTopSearch .textServices h3{
     font-weight: 900;
-    color: var(--Description);
+    color: var(--White);
     margin: 10px;
   }
 
@@ -140,18 +136,18 @@
 
   .TopHeadHome .blockTop .ImagesTop .topData .links h5{
     font-size: 14px;
-    color: var(--Paragraph);
+    color: var(--White);
     font-weight: 600;
     margin: 0px 10px;
     }
 
     .TopHeadHome .blockTop .ImagesTop .topData .links h5 a {
       text-decoration: none;
-      color: var(--Paragraph);
+      color: var(--White);
     }
     .TopHeadHome .blockTop .ImagesTop .topData .links h5 a:hover {
       text-decoration: none;
-      color: var(--Primary);
+      color: var(--White);
     }
 
   .TopHeadHome .blockTop .ImagesTop .topData .buttons {
@@ -191,7 +187,7 @@
     border: none;
     border-radius: 25px;
     padding: 10px 20px;
-    background-color: var(--Primary);
+    background-color: var(--White);
     font-weight:600;
     color: var(--White);
     font-size:14px;
@@ -215,7 +211,7 @@
   background-color: var(--BorderInput2);
 }
   .TopHeadHome .blockTop .ImagesTop .topData .buttons .iconUnicAdm2:hover {
-  background-color: var(--PrimaryHover);
+  background-color: var(--WhiteHover);
 }
 .TopHeadHome .blockTop .ImagesTop .imagemSlider{
     width: 100%;
@@ -261,8 +257,7 @@
         align-items: center;
         justify-content: flex-start;
         height: 100%; 
-        background-color: var(--White);
-        /* background-color: rgba(255,255,255,0.9); */
+
         backdrop-filter: blur(5px);
         padding: 0;
       }

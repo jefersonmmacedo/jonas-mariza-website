@@ -15,6 +15,7 @@ import { Finance } from "../../components/Finance/Finance";
 import NavbarHome from "../../components/NavHome/Navbar";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { PropertyHome } from "../../components/PropertyHome/PropertyHome";
+import Navbar from "../../components/NavBarTop/Navbar";
 
 export function Home() {
     const idCompany = process.env.REACT_APP_CODEUSER
@@ -361,6 +362,7 @@ export function Home() {
     return (
         <Div >
             <NavbarHome idCompany={idCompany}/>
+            {/* <Navbar idCompany={idCompany}/> */}
             <TopHeadHome idCompany={idCompany}/>
            
             <div className="textFeature">

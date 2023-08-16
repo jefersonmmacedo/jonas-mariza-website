@@ -192,14 +192,14 @@ const RightNav = ({ open }) => {
             Financiamento
             </a>
           </li> */}
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <a href='/legalizacao' >
             Legalizacao
             </a>
-          </li>
+          </li> */}
           <li className='nav-item'>
             <a href='/administracao-de-condiminios' >
-            Administração de condomínios
+            Administração de Condomínios
             </a>
           </li>
          
