@@ -170,9 +170,9 @@
     border: none;
     border-radius: 25px;
     padding: 10px 20px;
-    background-color: var(--White);
+    background-color: var(--Primary);
     font-weight:600;
-    color: var(--Primaey);
+    color: var(--White);
     font-size:14px;
     margin:5px 5px;
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
