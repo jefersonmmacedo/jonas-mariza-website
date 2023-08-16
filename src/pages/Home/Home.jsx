@@ -14,6 +14,7 @@ import { useParams } from "react-router-dom";
 import { Finance } from "../../components/Finance/Finance";
 import NavbarHome from "../../components/NavHome/Navbar";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import { PropertyHome } from "../../components/PropertyHome/PropertyHome";
 
 export function Home() {
     const idCompany = process.env.REACT_APP_CODEUSER
@@ -361,12 +362,12 @@ export function Home() {
         <Div >
             <NavbarHome idCompany={idCompany}/>
             <TopHeadHome idCompany={idCompany}/>
-            <ProcessProperty idCompany={idCompany}/>
+           
             <div className="textFeature">
             <h3>Imóveis à venda</h3>
             </div>
             <div className="carroussel">
-            <PropertyCarroussel status={"Venda"} idCompany={idCompany}/>
+            <PropertyHome status={"Venda"} idCompany={idCompany}/>
             </div>
 
             <div className="linkDirect">
@@ -378,8 +379,8 @@ export function Home() {
             </div>
 
                 {/* <BlockHome idCompany={idCompany} /> */}
-
             <Finance />
+                <ProcessProperty idCompany={idCompany}/>
             {/* <ExploreIconsProperties idCompany={idCompany} /> */}
             <Footer idCompany={idCompany}/>
 

@@ -10,14 +10,11 @@ import { useFetch } from "../../hooks/useFetch";
 import { useState } from "react";
 
 function SliderHome2() {
-  //  const idCompany = process.env.REACT_APP_CODEUSER
-  //  console.log(idCompany);
+   const idCompany = process.env.REACT_APP_CODEUSER
+   console.log(idCompany);
 
-    const [ currentPage, setCurrentPage] = useState(0);
-    const perPage = 12;
-    const availability = "Disponível";
-   // const {data} = useFetch(`/property/company/${idCompany}`);
-    const {data} = useFetch(`/property/all/${availability}?emphasis=false&page=${currentPage}&limit=${perPage}`);
+
+    const {data} = useFetch( `property/company/${idCompany}`);
 
     if(data) {
         console.log(data);
@@ -28,6 +25,8 @@ function SliderHome2() {
             <h5>Carregando...</h5>
         )
     }
+
+    const filterData = data?.slice(0, 8);
 
 const buttonStyle = {
   padding: '10px',
@@ -45,7 +44,7 @@ const properties = {
    
     return (
       <Slide {...properties}>
-          {data?.map((property) => {
+          {filterData?.map((property) => {
             return (
                 property?.availability !== "Disponível" ? "" :
                 <div className="each-slide-effect" key={property.id}>

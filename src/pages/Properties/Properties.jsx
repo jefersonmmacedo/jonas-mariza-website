@@ -41,7 +41,9 @@ export function Properties(){
     const [ currentPage, setCurrentPage] = useState(0);
     const perPage = 200;
 
-    const {data} = useFetch(`/property/all/${availability}?emphasis=false&page=${currentPage}&limit=${perPage}`);
+
+    const {data} = useFetch( `property/company/${idCompany}`);
+
 
     if(data) {
         console.log(data)
@@ -54,25 +56,9 @@ export function Properties(){
         }
     }, "3000")
 
-        useEffect(() => {
-            if(data) {
-                 setProperties(oldProperties => [...oldProperties, ...data])
-            }
-      }, [data]);
+
   
-    
-      useEffect(() => {
-        const intersectionObserver = new IntersectionObserver(entries => {
-          if (entries.some(entry => entry.isIntersecting)) {
-            console.log('Sentinela appears!', currentPage + 1)
-            setCurrentPage((currentValue) => currentValue + 1);
-          }
-        })
-        intersectionObserver.observe(document.querySelector('#sentinela'));
-        return () => intersectionObserver.disconnect();
-      }, []);
-  
-      if(!properties) {
+      if(!data) {
         return (
             <div className="loader">
             <PropertyUnicBlockLoader />
@@ -101,9 +87,9 @@ export function Properties(){
         <div className="ListProperty">
             <div className="topList">
                 <div className="textItens">
-                {properties?.length === 0 ?
+                {data?.length === 0 ?
                   ""                   
-                : properties?.length === 1 ?
+                : data?.length === 1 ?
                 <h3>{status === "Venda" ? `Imóvel à ${status}` : `Imóvel para ${status}`}</h3>
                 : status === undefined ?
                 <h3>Imóveis disponíveis</h3>
@@ -113,21 +99,18 @@ export function Properties(){
                 </div>
                 {/* <FilterPropertiesList status={status} typeProperty={type} subTypeProperty={subType} district={district} city={city} uf={uf} quarto={bedroom} banheiro={restroom} suítes={suite} garagem={garage}/> */}
            
-                <div className="statusPropertiesSelect">
+                {/* <div className="statusPropertiesSelect">
                     <button className={status === "Venda" ? "select" : ""} onClick={() => handleSelectStatu("Venda")}>Venda</button>
                     <button className={status === "Aluguel" ? "select" : ""} onClick={() => handleSelectStatu("Aluguel")}>Aluguel</button>
-                </div>
+                </div> */}
             </div>
 
-        {properties?.length > 0 ?
+        {data?.length > 0 ?
          <div className="itens">
-            {enphasisProperties?.map((property) => {
+
+            {data?.map((property) => {
                     return (
-                        <PropertyUnicBlock id={property.id} key={property.id} style="Emphasis"/>
-                    )
-                })}
-            {properties?.map((property) => {
-                    return (
+                        property?.availability !== availability && property?.availability !== status ? "" :
                         <PropertyUnicBlock id={property.id} key={property.id}/>
                     )
                 })}

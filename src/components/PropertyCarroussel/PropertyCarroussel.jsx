@@ -8,15 +8,12 @@ import { useState } from "react";
 export function PropertyCarroussel({status}) {
     console.log(status)
     const availability = "Disponível";
-    const [ currentPage, setCurrentPage] = useState(0);
-    const perPage = 12;
 
     const idCompany = process.env.REACT_APP_CODEUSER
     console.log(idCompany);
 
     const {data} = useFetch(
-        //`/property/companystatus/${availability}/${status}/${idCompany}?page=${currentPage}&limit=${perPage}`
-        `/property/all/${availability}?emphasis=false&page=${currentPage}&limit=${perPage}`
+        `property/company/${idCompany}`
     );
 
     if(data) {
