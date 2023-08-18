@@ -17,10 +17,16 @@ export function ContactModal() {
         }
 
         function HandleOpenLink2(data) {
+            console.log(data);
             window.open(`${data}`)
           }
         function HandleCall(data) {
+            console.log(data);
             window.open(`tel:+${data}`, "_self");
+          }
+          function handleMail(data) {
+            console.log(data);
+            window.open(`mailto:${data}`)
           }
           
 
@@ -69,7 +75,7 @@ export function ContactModal() {
                         <h2>emanuelalvesrb@gmail.com</h2>
                             </div>
                             <div className="buttonsFale">
-                            <button className="btn2"><IoMail/></button>
+                            <button className="btn2" onClick={() => handleMail("emanuelalvesrb@gmail.com")}><IoMail/></button>
                             </div>
                         </div>
                     </div>
