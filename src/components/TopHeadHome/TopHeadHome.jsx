@@ -27,7 +27,7 @@ export function TopHeadHome() {
             </div>
 
                 <div className="TextTopSearch">
-                <h1><span>Imobiliária e </span>Administração <span>de Condomínios</span></h1>
+                <h1><span>Imobiliária e </span>Administração <span>de Condomínio</span></h1>
 
                 <div className="textServices">
                     <h3>Administração de Condomínios</h3>

@@ -39,7 +39,7 @@
   }
 
   .TopHeadHome .blockTop .SearchText .image img {
-    width: 75%;
+    width: 80%;
     margin: 20px 0;
   }
 
@@ -66,11 +66,12 @@
 
   .TopHeadHome .blockTop .SearchText .TextTopSearch h1 {
     font-weight: 900;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 2.0rem;
     margin-bottom:10px;
     text-align: center;
     color: var(--White);
+    margin:10px 20px;
   }
 
   .TopHeadHome .blockTop .SearchText .TextTopSearch h1 span {
