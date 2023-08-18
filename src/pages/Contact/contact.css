@@ -7,19 +7,19 @@
     padding: 60px 0px 0px 0px;
 }
 
-.Contact h2 {
+.Contact .h2 {
     margin-top: 40px;
     font-weight: 700;
     color: var(--Primary);
     text-align: center;
 }
 
-.Contact h2 span {
+.Contact .h2 span {
     color: var(--Primary);
 }
 
 
-.Contact h4 {
+.Contact .h4 {
     color: var(--Paragraph);
     margin:10px;
     text-align: center;

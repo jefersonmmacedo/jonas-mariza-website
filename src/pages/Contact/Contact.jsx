@@ -10,8 +10,8 @@ export function Contact() {
     return (
         <div className="Contact">
             <Navbar2 idCompany={idCompany}/>
-                <h2>Fale conosco</h2>
-                <h4>Entre em contato conosco, estamos prontos para atendê-lo.</h4>
+                <h2 className="h2">Fale conosco</h2>
+                <h4 className="h4">Entre em contato conosco, estamos prontos para atendê-lo.</h4>
 
 
             <div className="form">
