@@ -61,16 +61,16 @@ export function CompanyInfo({idProperty, idCompany, nameCompany}) {
 
     function handleNewContactButton(type) {
         newContact({
-        idProperty: idProperty, idCompany: idCompany, nameCompany:nameCompany, idClient: user.id, name: user.name, whatsappCompany: data[0]?.whatsapp, phoneCompany: data[0]?.phone,
+        idProperty: idProperty, idCompany: idCompany, nameCompany:nameCompany, idClient: user.id, name: user.name, whatsappCompany: 21996065213, phoneCompany: data[0]?.phone,
         email: user.email, phone: user.phone, whatsapp: user.whatsapp, type: type, origin: "Site", latitude, longitude,
-        link: `http://www.suachave.com.br/imovel/${idProperty}`})
+        link: `https://jonasemariza.com.br/imovel/${idProperty}`})
     }
 
     function handleNewContactModal(type) {
         newContact({
-        idProperty: idProperty, idCompany: idCompany, nameCompany:nameCompany, idClient: "User Sem cadastro", name: name, whatsappCompany: data[0]?.whatsapp, phoneCompany: data[0]?.phone,
+        idProperty: idProperty, idCompany: idCompany, nameCompany:nameCompany, idClient: "User Sem cadastro", name: name, whatsappCompany: 21996065213, phoneCompany: data[0]?.phone,
         email: email, phone: phone, whatsapp: phone, type: type, origin: "Site", latitude, longitude,
-        link: `http://www.suachave.com.br/imovel/${idProperty}`})
+        link: `https://jonasemariza.com.br/imovel/${idProperty}`})
 
         if(type === "WhatsApp") {
             setIsOpenModa(false)
@@ -119,9 +119,9 @@ export function CompanyInfo({idProperty, idCompany, nameCompany}) {
             :
             <div className="Head">
             <div className="image">
-            <a href={`/imobiliaria/${data[0]?.nameSlug}`}>
+           
                 <img src={data[0]?.logo} alt="" />
-                </a>
+             
             </div>
             <div className="textHead">
             {/* <h4 >{data[0]?.fantasyName}</h4> */}
