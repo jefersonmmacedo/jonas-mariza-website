@@ -235,7 +235,7 @@ const Navbar2 = () => {
       <Burger/>
       <div className="account">
       <ContactModal />               
-      <button className='iconUnicAdm2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio 2</button>               
+      <button className='iconUnicAdm2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
       </div>
     </Nav>
   )
