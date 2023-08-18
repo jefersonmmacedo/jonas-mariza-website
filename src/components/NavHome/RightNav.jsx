@@ -4,6 +4,7 @@ import { AuthContext } from '../../contexts/Auth';
 import api from '../../services/api';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { ContactModal } from '../ContactModal/ContactModal';
 
 
 const RightNav = ({ open }) => {
@@ -103,7 +104,9 @@ const RightNav = ({ open }) => {
   btn:hover{
     background-color: var(--Blue);
   }
-
+  .admin {
+    display: none;
+  }
 
   @media (max-width: 950px) {
     flex-flow: column nowrap;
@@ -164,11 +167,85 @@ const RightNav = ({ open }) => {
     .btn:hover{
       background-color: var(--Blue);
     }
+
+    
+
+    .admin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight:600;
+      color: var(--Text2);
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .admin .iconButtonAccount {
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      background-color: var(--White);
+      font-weight:600;
+      color: var(--Primary);
+      font-size:14px;
+      margin:5px 5px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  }
+    .admin .adminButton {
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      background-color: var(--White);
+      font-weight:600;
+      color: var(--Primary);
+      font-size:14px;
+      margin:5px 5px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  }
+  
+  .admin .iconButtonAccount img {
+   height: 20px;
+   margin-right: 5px;
+  }
+  
+  .admin .adminButton img {
+   height: 20px;
+   margin-right: 5px;
+  }
+  
+  .admin .iconButtonAccount:hover {
+    background-color: var(--BorderInput2);
+  }
+  .admin .adminButton:hover {
+    background-color: var(--PrimaryHover);
+  }
   }
 
   }
 `;
 
+
+function HandleOpenLink(data) {
+  window.open(`${data}`, "_self")
+}
+function HandleOpenLink2(data) {
+  window.open(`${data}`)
+}
 
   return (
     <Ul open={open}>
@@ -202,6 +279,11 @@ const RightNav = ({ open }) => {
             Administração de condomínios
             </a>
           </li>
+
+          <div className="admin">
+      <ContactModal />               
+      <button className='adminButton' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
+      </div>
          
     </Ul>
   )

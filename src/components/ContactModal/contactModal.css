@@ -122,6 +122,10 @@
 }
 
 
+@media (max-width: 900px) {
+    .faleConosco {
+        width: 95%;
+    }
 @media (max-width: 500px) {
 
     .content-modal-FaleConosco .itensModalFaleConosco svg {
@@ -166,5 +170,6 @@
         font-size: 15px;
         color: var(--White);
         margin: 0px;
+    }
     }
 }
