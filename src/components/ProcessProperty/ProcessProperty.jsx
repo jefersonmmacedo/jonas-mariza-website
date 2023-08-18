@@ -18,7 +18,7 @@ import {BsPatchCheck} from "react-icons/bs";
             </div>
             <div className="processUnic">
                 <BsPatchCheck />
-            <h5>Solicite a compra ou aluguél do imóvel</h5>
+            <h5>Solicite a compra do imóvel</h5>
             </div>
         </div>
     )
