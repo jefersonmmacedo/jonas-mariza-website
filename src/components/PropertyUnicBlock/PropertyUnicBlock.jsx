@@ -87,7 +87,7 @@ export function PropertyUnicBlock({id, style}) {
                     <div className="text">
                     <div className="textInfos">
                     <a href={`/imovel/${property?.id}`}>
-                    <h6>{property?.subType}</h6>
+                    <h5>{property?.subType}</h5>
                     {/* <h4>{StatusProperty !== undefined ? StatusProperty.slice(0,28) : StatusProperty}</h4> */}
                         </a>
                         <a href={`/imovel/${property?.id}`}>

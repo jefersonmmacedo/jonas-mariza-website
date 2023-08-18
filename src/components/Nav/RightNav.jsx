@@ -200,7 +200,7 @@ function HandleOpenLink2(data) {
 
           <div className="buttonsAccount">
       <ContactModal />               
-      <button className='iconButtonAccount2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
+      <button className='iconButtonAccount2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu Condomínio</button>               
       </div>
          
     </Ul>

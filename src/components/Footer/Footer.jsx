@@ -63,6 +63,21 @@ export function Footer() {
         margin-bottom: 10px;
     }
     
+    .sections .sectionUnic2 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 20%;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    .sections .sectionUnic2 img {
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    
     .sections .sectionUnic h3 {
         margin-bottom: 10px;
         font-weight:800;
@@ -329,7 +344,7 @@ export function Footer() {
     return (
         <Div>
                 <div className="sections">
-                        <div className="sectionUnic">
+                        <div className="sectionUnic2">
                         <a href="/"><img src={logo} alt="" /></a>
                             <h4 style={{textAlign: 'center'}}><b>Emanuel Dario Alves</b></h4>
                             <h4> CRECI: <b>{company?.creci}</b></h4>

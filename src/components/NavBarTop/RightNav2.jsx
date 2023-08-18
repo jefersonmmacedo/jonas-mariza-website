@@ -484,7 +484,7 @@ const RightNav2 = ({ open }) => {
                 <a className="unicIconMenu" href="https://facebook.com/powerstartenergy" target='_Blank'><IoLogoFacebook /></a>
                 <a className="unicIconMenu" href="https://linkedin.com/company/power-start-energy" target='_Blank'><IoLogoLinkedin /></a>
             </div>
-           <button className="contactWhatsapp" onClick={handleContact}>Meu condomínio</button>
+           <button className="contactWhatsapp" onClick={handleContact}>Meu Condomínio</button>
           </div>       
       </div>
 

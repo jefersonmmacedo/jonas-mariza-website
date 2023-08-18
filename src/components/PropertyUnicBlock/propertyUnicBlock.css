@@ -201,8 +201,8 @@ margin-top: -20px;
     align-items: flex-start;
     justify-content: flex-start;
     color: var(--Gray);
-    margin: 2px 5px;
-    font-weight: 500;
+    margin: 45px 5px 0px 5px; 
+    font-weight: 600;
 }
 .PropertyUnicBlock .text .textInfos h6 {
     display: flex;
@@ -255,7 +255,7 @@ margin-top: -20px;
 .PropertyUnicBlock .text .iconsBox .iconUnicBox .simbolBox  p {
     color: var(--Gray);
     font-weight: 600;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .PropertyUnicBlock .text .pricing {
