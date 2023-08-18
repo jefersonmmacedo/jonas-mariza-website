@@ -359,7 +359,7 @@ export function Footer() {
                                 <h4><a href="/imoveis/all">Imóveis</a></h4>
                                 <h4><a href="/corretores">Legalização</a></h4>
                                 <h4><a href="/financiamento">Administração de Condomínios</a></h4>
-                                {/* <h4><a href="/avaliacao">Avaliação</a></h4> */}
+                                <h4><a href="/faleconosco">Fale conosco</a></h4>
                         </div>
 
                         <div className="sectionUnic">
