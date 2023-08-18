@@ -53,7 +53,7 @@ export function TopHeadHome() {
                               <a href="/legalizacao">Legalização</a>
                         </h5>
                         <h5>
-                              <a href="/administracao-de-condiminios">Administração de condomínios</a>
+                              <a href="/administracao-de-condiminios">Administração de Condomínios</a>
                         </h5>
                     </div>
 

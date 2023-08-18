@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0px 0px 20px 0;
 }
 .SearchPropertyHomeCenter .viewFilter {
     width: 100%;
@@ -98,8 +99,8 @@
     justify-content: center;
     padding: 10px 20px;
     border-radius: 50px;
-    background-color: var(--Primary);
-    color: var(--White);
+    background-color: var(--White);
+    color: var(--Primary);
     font-weight: 500;
     border: none;
     height: 40px;
@@ -121,8 +122,8 @@
     display: none;
     padding: 10px 20px;
     border-radius: 6px;
-    background-color: var(--Primary);
-    color: var(--White);
+    background-color: var(--Whte);
+    color: var(--Primary);
     font-weight: 500;
     border: none;
     height: 40px;
@@ -343,7 +344,11 @@
             justify-content: center;
         }
     
-        @media (max-width: 700px) {   
+        @media (max-width: 700px) {  
+            
+            .SearchPropertyHomeCenter {
+                width: 95%;
+            }            
 
             .SearchPropertyHomeCenter .search .filter {
                 display: flex;
@@ -369,6 +374,11 @@
             .SearchPropertyHomeCenter .search .mobile {
                 display: none;
                 border-radius: 50px;
+            }
+
+            .SearchPropertyHomeCenter .search .btnSearch {
+                background-color: var(--White);
+                color: var(--Primary);
             }
 
 
@@ -474,6 +484,10 @@
             }
 
             @media (max-width: 480px) {
+                .SearchPropertyHomeCenter {
+                    margin: 10px auto;
+                    width: 95%;
+                }    
                 .SearchPropertyHomeCenter .search {
                     display: flex;
                     flex-direction: column;

@@ -260,7 +260,7 @@ export function SearchPropertyHomeCenter() {
                     </>
                 }
 
-                     <button className="btnSearch" onClick={handleLinkSearchProperty}><IoSearch /></button>
+                     <button className="btnSearch" onClick={handleLinkSearchProperty}><IoSearch /> </button>
                     
                     <button className="mobile" onClick={handleLinkSearchProperty}><IoSearch /></button>
             </div>

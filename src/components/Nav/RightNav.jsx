@@ -4,7 +4,7 @@ import { AuthContext } from '../../contexts/Auth';
 import api from '../../services/api';
 import { useEffect } from 'react';
 import { useState } from 'react';
-
+import Zap from '../../assets/images/zap.png'
 
 const RightNav = ({ open }) => {
   const idCompany = process.env.REACT_APP_CODEUSER;
@@ -54,56 +54,11 @@ const RightNav = ({ open }) => {
   li a:hover{
     color: var(--PrimaryHover);
   }
-  button {
+
+
+  .buttonsAccount {
     display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 10px;
-    background-color: var(--Primary);
-    border-radius: 25px;
-    margin: 5px 0;
-    color: var(--White);
-    border: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
-
   }
-
-  button:hover{
-    background-color: var(--ButtonHover);
-    color: var(--White);
-  }
-  .btn {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 10px;
-    background-color: rgba(237, 50, 55, 0.95);
-    border-radius: 25px;
-    margin: 5px 0;
-    color: var(--White);
-    border: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
-
-  }
-
-  btn:hover{
-    background-color: var(--Blue);
-  }
-
 
   @media (max-width: 950px) {
     flex-flow: column nowrap;
@@ -129,45 +84,84 @@ const RightNav = ({ open }) => {
       color: var(--Magenta);
     }
 
-    button{
-      display: block;
+
+
+
+    .buttonsAccount {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight:600;
+      color: var(--Text2);
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .buttonsAccount .iconButtonAccount {
+      width: 95%;
+      display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
       background-color: var(--White);
+      font-weight:600;
       color: var(--Primary);
-      margin-left: 10px;
-      margin-right: 10px;
-      padding: 10px 0;
-    }
-    button svg {
-      margin-right: 1px;
-    }
-
-    button:hover{
-      background-color: var(--ButtonHover);
-    }
-    .btn{
-      display: block;
+      font-size:14px;
+      margin:5px 5px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  }
+    .buttonsAccount .iconButtonAccount2 {
+      width: 95%;
+      display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      background-color:  rgba(237, 50, 55, 0.1);
-      margin-left: 10px;
-      margin-right: 10px;
-      padding: 10px 0;
-    }
-    .btn svg {
-      margin-right: 1px;
-    }
-
-    .btn:hover{
-      background-color: var(--Blue);
-    }
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      background-color: var(--White);
+      font-weight:600;
+      color: var(--Primary);
+      font-size:14px;
+      margin:5px 5px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  }
+  
+  .buttonsAccount .iconButtonAccount img {
+   height: 20px;
+   margin-right: 5px;
+  }
+  
+  .buttonsAccount .iconButtonAccount2 img {
+   height: 20px;
+   margin-right: 5px;
+  }
+  
+  .buttonsAccount .iconButtonAccount:hover {
+    background-color: var(--BorderInput2);
+  }
+  .buttonsAccount .iconButtonAccount2:hover {
+    background-color: var(--PrimaryHover);
+  }
   }
 
   }
 `;
+
+function HandleOpenLink(data) {
+  window.open(`${data}`, "_self")
+}
+function HandleOpenLink2(data) {
+  window.open(`${data}`)
+}
 
 
   return (
@@ -192,16 +186,21 @@ const RightNav = ({ open }) => {
             Financiamento
             </a>
           </li> */}
-          {/* <li className='nav-item'>
+          <li className='nav-item'>
             <a href='/legalizacao' >
             Legalizacao
             </a>
-          </li> */}
+          </li>
           <li className='nav-item'>
             <a href='/administracao-de-condiminios' >
             Administração de Condomínios
             </a>
           </li>
+
+          <div className="buttonsAccount">
+      <button className='iconButtonAccount' onClick={() => HandleOpenLink2(`https://wa.me/5521997476045`)}> <img src={Zap} alt="" /> Fale conosco</button>               
+      <button className='iconButtonAccount2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
+      </div>
          
     </Ul>
   )

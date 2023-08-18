@@ -268,13 +268,13 @@ margin-top: -20px;
     margin-top: 5px;
 }
 
-.PropertyUnicBlock .text .pricing h6 {
+.PropertyUnicBlock .text .pricing h5 {
     color: var(--Gray);
     font-weight: 800;
     margin: 0 5px;
     text-align: flex-start;
 }
-.PropertyUnicBlock .text .pricing h6 span {
+.PropertyUnicBlock .text .pricing h5 span {
     font-weight: 500;
     color: var(--Gray);
 }
@@ -559,9 +559,9 @@ margin-top: -20px;
     margin-top: 1px;
 }
 .PropertyUnicEmphasis .text .iconsBox .iconUnicBox .simbolBox  p {
-    color: var(--Gray);
+    color: var(--Primary);
     font-weight: 600;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .PropertyUnicEmphasis .text .pricing {

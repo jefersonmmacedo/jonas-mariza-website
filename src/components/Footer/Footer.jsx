@@ -44,7 +44,7 @@ export function Footer() {
         justify-content:space-between;
         flex-direction: row;
         width: 85%;
-        padding: 40px 20px 20px 20px;
+        padding: 10px;
         flex-wrap: wrap;
     }
     
@@ -59,7 +59,7 @@ export function Footer() {
     }
     
     .sections .sectionUnic img {
-        width: 120px;
+        height: 70px;
         margin-bottom: 10px;
     }
     
@@ -71,7 +71,7 @@ export function Footer() {
         margin-bottom: 10px;
         font-weight:700;
     }
-    .sections .sectionUnic h5 {
+    .sections .sectionUnic h4 {
         font-weight:500;
         font-size: 14px;
         display: flex;
@@ -80,15 +80,14 @@ export function Footer() {
         flex-direction: row;
         margin-bottom: 5px;
         font-weight: 700;
-        font-size: 12px;
     }
-    .sections .sectionUnic h5 a {
+    .sections .sectionUnic h4 a {
         font-weight:400;
         text-decoration: none;
         color: var(--White);
         font-weight: 700;
     }
-    .sections .sectionUnic h5 svg {
+    .sections .sectionUnic h4 svg {
         font-weight:400;
         margin-right: 5px;
         color: var(--White);
@@ -255,7 +254,7 @@ export function Footer() {
     @media (max-width: 1280px) {
         .sections {
             justify-content:space-between;
-            width: 90%;
+            width: 100%;
         }
         .sections .sectionUnic {
             display: flex;
@@ -263,31 +262,39 @@ export function Footer() {
             justify-content: flex-start;
             flex-direction: column;
             width: 200px;
-            height: 180px;
             text-align: left;
         }
         @media (max-width: 1200px) {
             .sections {
                 justify-content:space-between;
-                width: 90%;
+                width: 100%;
             }
         @media (max-width: 900px) {
+            padding: 5px;
+
             .sections {
                 justify-content:space-around;
             }
         
             .sections .sectionUnic {
                 display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
+                align-items: center;
+                justify-content: center;
                 flex-direction: column;
-                width: 200px;
-                height: 100%;
+                width: 300px;
                 text-align: left;
                 margin: 20px 10px;
             }
     
             @media (max-width: 750px) {
+
+                .sections .sectionUnic {
+                    width: 95%;
+                    margin:15px 5px;
+                    padding: 0px;
+                    justify-content: center;
+                }
+
                 .copy {
                     display: flex;
                     align-items: center;
@@ -297,6 +304,7 @@ export function Footer() {
                     border: none;
                     border-top: 1px solid var(--White);
                     padding: 10px 0px;
+                    text-align: center;
                 }
                 .copy h5 {
                     margin: 10px 0px;
@@ -323,8 +331,8 @@ export function Footer() {
                 <div className="sections">
                         <div className="sectionUnic">
                         <a href="/"><img src={logo} alt="" /></a>
-                            <h5><b>Emanuel Dario Alves</b></h5>
-                            <h5> CRECI: <b>{company?.creci}</b></h5>
+                            <h4 style={{textAlign: 'center'}}><b>Emanuel Dario Alves</b></h4>
+                            <h4> CRECI: <b>{company?.creci}</b></h4>
                             <br />
                             <div className="network">
                                 {company?.facebook === "" ? ""
@@ -347,20 +355,20 @@ export function Footer() {
                         </div>
                         <div className="sectionUnic">
                             <h3>NAVEGAÇÃO</h3>
-                                <h5><a href="/sobre">Quem somos</a></h5>
-                                <h5><a href="/imoveis/all">Imóveis</a></h5>
-                                <h5><a href="/corretores">Legalização</a></h5>
-                                <h5><a href="/financiamento">Administração de Condomínios</a></h5>
-                                {/* <h5><a href="/avaliacao">Avaliação</a></h5> */}
+                                <h4><a href="/sobre">Quem somos</a></h4>
+                                <h4><a href="/imoveis/all">Imóveis</a></h4>
+                                <h4><a href="/corretores">Legalização</a></h4>
+                                <h4><a href="/financiamento">Administração de Condomínios</a></h4>
+                                {/* <h4><a href="/avaliacao">Avaliação</a></h4> */}
                         </div>
 
                         <div className="sectionUnic">
                         <h3>ATENDIMENTO</h3>
-                            <h5><IoLogoWhatsapp />{company?.whatsapp} - Venda de Imóveis</h5>
-                            <h5><IoLogoWhatsapp />{company?.phone} - Administração de Condomínios</h5>
-                            <h5><IoMailOutline />{company?.email}</h5>
-                            <h5><IoLocationOutline />{company?.road}, Nº {company?.number}, {company?.district}</h5>
-                            <h5>{company?.city} - {company?.uf}</h5>
+                            <h4><IoLogoWhatsapp />{company?.whatsapp} - Venda de Imóveis</h4>
+                            <h4><IoLogoWhatsapp />{company?.phone} - Admin. Condomínios</h4>
+                            <h4><IoMailOutline />{company?.email}</h4>
+                            <h4><IoLocationOutline />{company?.road}, Nº {company?.number}, {company?.district}</h4>
+                            <h4>{company?.city} - {company?.uf}</h4>
                         </div>
                         {/* <div className="sectionUnic">
                         <h3>Newsletter</h3>
