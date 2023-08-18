@@ -64,7 +64,7 @@ const properties = {
                     </div>
                     : ""
                     } 
-                    <h5>{property.subType}</h5>
+                    <h4>{property.subType}</h4>
                      <a href={`/imovel/${property.id}`}>
                     <h3>{property.district} - {property.city} - {property.uf}</h3>
                     </a>
@@ -203,7 +203,7 @@ const properties = {
                     </div>
                     }
                     <div className="pricing">
-                        <h6>{property?.status}</h6>
+                        <h5>{property?.status}</h5>
                         {property?.priceSale === "" && property?.priceRent === ""  ?
                         <h4><span>Consultar valor</span></h4>
                         :

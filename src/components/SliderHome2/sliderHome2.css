@@ -58,18 +58,19 @@
 .each-slide-effect .imageTop2 .blockSlider2 h3 {
   color: var(--Paragraph);
   font-weight: 700;
-  margin: 0px 10px 5px 10px;
+  margin: 0px 5px 5px 5px;
 }
 .each-slide-effect .imageTop2 .blockSlider2 a {
   text-decoration: none;
 }
 .each-slide-effect .imageTop2 .blockSlider2 h4 {
   color: var(--Gray);
-  margin: 0 10px;
+  margin: 0 5px;
+  font-weight: 700;
 }
 .each-slide-effect .imageTop2 .blockSlider2 h5 {
   color: var(--Gray);
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
   .each-slide-effect .imageTop2 .blockSlider2 .iconsBox {
@@ -114,7 +115,7 @@
 .each-slide-effect .imageTop2 .blockSlider2 .iconsBox .iconUnicBox .simbolBox  p {
     color: var(--Gray);
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 
@@ -129,13 +130,13 @@
   margin-top: 5px;
 }
 
-.each-slide-effect .imageTop2 .blockSlider2  .pricing h6 {
+.each-slide-effect .imageTop2 .blockSlider2  .pricing h5 {
   color: var(--Gray);
   font-weight: 800;
   margin: 0 5px;
   text-align: flex-start;
 }
-.each-slide-effect .imageTop2 .blockSlider2  .pricing h6 span {
+.each-slide-effect .imageTop2 .blockSlider2  .pricing h5 span {
   font-weight: 500;
   color: var(--Gray);
 }
