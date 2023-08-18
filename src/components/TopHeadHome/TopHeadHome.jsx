@@ -28,7 +28,6 @@ export function TopHeadHome() {
 
                 <div className="TextTopSearch">
                 <h1><span>Imobiliária e </span>Administração <span>de Condomínios</span></h1>
-                <h4>Atuando tradicionalmente na cidade de Rio Bonito-RJ</h4>
 
                 <div className="textServices">
                     <h3>Compra e Venda de Imóveis</h3>
