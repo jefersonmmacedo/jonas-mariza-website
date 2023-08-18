@@ -43,11 +43,11 @@ export function Contact() {
                 </div>
                 <div className="blockContact">
                         <h3><IoLogoWhatsapp  /> Vendas</h3>
-                        <h5>(21) 99747-6045</h5>
+                        <h5>(21) 99606-5213</h5>
                 </div>
                 <div className="blockContact">
                     <h3><IoLogoWhatsapp /> Adm. Condomínios </h3>
-                    <h5>(21) 99606-5213</h5>
+                    <h5>(21) 99747-6045</h5>
                 </div>
             </div> 
 
