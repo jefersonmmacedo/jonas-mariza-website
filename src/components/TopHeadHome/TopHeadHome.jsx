@@ -30,7 +30,7 @@ export function TopHeadHome() {
                 <h1><span>Imobiliária e </span>Administração <span>de Condomínio</span></h1>
 
                 <div className="textServices">
-                    <h3>Administração de Condomínios</h3>
+                    <h3>Administração de Condomínio</h3>
                     <h3>Compra e Venda de Imóveis</h3>
                     <h3>Financiamento Imobiliário</h3>
                     <h3>Legalização de Imóveis</h3>
