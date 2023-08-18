@@ -279,6 +279,14 @@ export function Footer() {
             width: 200px;
             text-align: left;
         }
+        .sections .sectionUnic2 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 200px;
+            text-align: left;
+        }
         @media (max-width: 1200px) {
             .sections {
                 justify-content:space-between;
@@ -300,10 +308,25 @@ export function Footer() {
                 text-align: left;
                 margin: 20px 10px;
             }
+            .sections .sectionUnic2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 300px;
+                text-align: left;
+                margin: 20px 10px;
+            }
     
             @media (max-width: 750px) {
 
                 .sections .sectionUnic {
+                    width: 95%;
+                    margin:15px 5px;
+                    padding: 0px;
+                    justify-content: center;
+                }
+                .sections .sectionUnic2 {
                     width: 95%;
                     margin:15px 5px;
                     padding: 0px;
@@ -328,7 +351,11 @@ export function Footer() {
                 
                 @media (max-width: 450px) {
                     .sections .sectionUnic {
-                        width: 350px;
+                        width: 95%;
+                        padding: 0px;
+                    }
+                    .sections .sectionUnic {
+                        width: 95%;
                         padding: 0px;
                     }
                     
@@ -382,7 +409,7 @@ export function Footer() {
                             <h4><IoLogoWhatsapp />{company?.whatsapp} - Venda de Imóveis</h4>
                             <h4><IoLogoWhatsapp />{company?.phone} - Admin. Condomínios</h4>
                             <h4><IoMailOutline />{company?.email}</h4>
-                            <h4><IoLocationOutline />{company?.road}, Nº {company?.number}, {company?.district}</h4>
+                            <h4><IoLocationOutline />XV de Novembro, Nº {company?.number}, {company?.complement} - {company?.district}</h4>
                             <h4>{company?.city} - {company?.uf}</h4>
                         </div>
                         {/* <div className="sectionUnic">
