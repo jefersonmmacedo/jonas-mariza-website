@@ -222,7 +222,7 @@ const NavbarHome = () => {
 
 .account .iconUnicAdm2 {
   font-size:10px;
-  padding: 5px 20px;
+  padding: 10px 20px;
   margin: 3px;
 }
 
@@ -251,7 +251,7 @@ const NavbarHome = () => {
       </div>
       <Burger/>
       <div className="account">
-      <ContactModal />               
+      <ContactModal />  
       <button className='iconUnicAdm2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
       </div>
     </Nav>
