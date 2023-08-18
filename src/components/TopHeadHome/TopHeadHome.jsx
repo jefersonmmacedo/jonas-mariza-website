@@ -6,6 +6,7 @@ import { SliderHome } from "../SliderHome/SliderHome";
 import { SearchPropertyHomeTop2 } from "../SearchPropertyHomeTop2/SearchPropertyHomeTop2";
 import { SliderHome2 } from "../SliderHome2/SliderHome2";
 import { SearchPropertyHomeCenter } from "../SearchPropertyHomeCenter/SearchPropertyHomeCenter";
+import { ContactModal } from "../ContactModal/ContactModal";
 
 export function TopHeadHome() {
 
@@ -58,7 +59,7 @@ export function TopHeadHome() {
                     </div>
 
                     <div className="buttons">
-                        <button className='iconUnicAdm' onClick={() => HandleOpenLink2(`https://wa.me/5521997476045`)}> <img src={Zap} alt="" /> Fale conosco</button>               
+                        <ContactModal />               
                         <button className='iconUnicAdm2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu Condomínio</button>               
                     </div>
                 </div> 

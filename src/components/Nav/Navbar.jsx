@@ -5,6 +5,7 @@ import logo from '../../assets/images/logo1.png'
 import { AuthContext } from '../../contexts/Auth';
 import { useContext, useEffect, useState } from 'react';
 import api from '../../services/api';
+import { ContactModal } from '../ContactModal/ContactModal';
 
 const Navbar2 = () => {
   const { logout } = useContext(AuthContext);
@@ -233,7 +234,7 @@ const Navbar2 = () => {
       </div>
       <Burger/>
       <div className="account">
-      <button className='iconUnicAdm' onClick={() => HandleOpenLink2(`https://wa.me/5521997476045`)}> <img src={Zap} alt="" /> Fale conosco</button>               
+      <ContactModal />               
       <button className='iconUnicAdm2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
       </div>
     </Nav>

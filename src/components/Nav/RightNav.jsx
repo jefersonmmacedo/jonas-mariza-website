@@ -5,6 +5,7 @@ import api from '../../services/api';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Zap from '../../assets/images/zap.png'
+import { ContactModal } from '../ContactModal/ContactModal';
 
 const RightNav = ({ open }) => {
   const idCompany = process.env.REACT_APP_CODEUSER;
@@ -198,7 +199,7 @@ function HandleOpenLink2(data) {
           </li>
 
           <div className="buttonsAccount">
-      <button className='iconButtonAccount' onClick={() => HandleOpenLink2(`https://wa.me/5521997476045`)}> <img src={Zap} alt="" /> Fale conosco</button>               
+      <ContactModal />               
       <button className='iconButtonAccount2' onClick={() => HandleOpenLink2(`https://www.immobileweb.com.br/login/jonasemariza`)}> Meu condomínio</button>               
       </div>
          

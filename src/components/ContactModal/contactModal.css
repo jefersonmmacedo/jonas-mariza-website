@@ -1,0 +1,170 @@
+﻿.faleConosco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: var(--White);
+    font-weight:600;
+    color: var(--Primary);
+    font-size:14px;
+    margin:5px 5px;
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+-webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+}
+.faleConosco svg {
+    margin-right: 5px;
+    color: var(--Aproved);
+}
+
+
+.content-modal-FaleConosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--White);
+}
+.content-modal-FaleConosco .itensModalFaleConosco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    overflow:auto; 
+    max-height: 500px;
+    margin: 20px 30px 20px 20px;
+    padding: 20px;
+}
+
+.content-modal-FaleConosco .itensModalFaleConosco svg {
+    color: var(--Primary);
+    font-size: 45px;
+}
+.content-modal-FaleConosco .itensModalFaleConosco h1 {
+    font-weight: 800;
+    color: var(--Paragraph);
+    margin: 0;
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin:5px;
+    background: var(--BorderInput);
+    padding: 5px;
+    border-radius: 10px;
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+    margin:5px;
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .text h3 {
+   font-weight: 700;
+   color: var(--Gray)
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .text h2 {
+   font-weight: 700;
+   color: var(--Description);
+   margin-top: -2px;
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+    margin:5px;
+}
+
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn1 {
+    border: none;
+    background-color: var(--Aproved);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    color: var(--White);
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn1 svg {
+    font-size: 25px;
+    color: var(--White);
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn2 {
+    border: none;
+    background-color: var(--Primary);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    color: var(--White);
+}
+.content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn2 svg {
+    font-size: 25px;
+    color: var(--White);
+}
+
+
+@media (max-width: 500px) {
+
+    .content-modal-FaleConosco .itensModalFaleConosco svg {
+        color: var(--Primary);
+        font-size: 45px;
+        margin-left: 5px;
+    }
+    .content-modal-FaleConosco .itensModalFaleConosco h1 {
+        margin-left: 15px;
+    }
+
+    .content-modal-FaleConosco .itensModalFaleConosco {
+        margin: 10px;
+        padding: 10px 20px 10px 10px;
+    }
+
+    
+
+    .content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale {
+        width: 97%;
+    }
+    
+    .content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn1 {
+       width: 100%;
+    }
+    .content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn2 {
+       width: 100%;
+    }
+
+    .content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn1 svg {
+        font-size: 15px;
+        color: var(--White);
+        margin: 0px;
+    }
+    .content-modal-FaleConosco .itensModalFaleConosco .ButtonsFaleConosco .buttonUnicFaleConosco .buttonsFale .btn2 svg {
+        font-size: 15px;
+        color: var(--White);
+        margin: 0px;
+    }
+}
