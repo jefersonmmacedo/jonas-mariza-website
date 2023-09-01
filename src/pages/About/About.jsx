@@ -1,7 +1,7 @@
 ﻿import { Footer } from "../../components/Footer/Footer";
 import Navbar2 from "../../components/Nav/Navbar";
-import Image1 from '../../assets/images/background10.jpg'
-import Image2 from '../../assets/images/background12.jpg'
+import Image1 from '../../assets/images/pais1.png'
+import Image2 from '../../assets/images/pais2.png'
 import corretor1 from '../../assets/images/corretor1.jpg'
 import corretor2 from '../../assets/images/corretor2.jpg'
 import corretor3 from '../../assets/images/corretor3.jpg'
@@ -60,19 +60,21 @@ export function About() {
                     </div>
                 </div>
                 <div className="TextAboutInfo">
-                    <h2>Saiba mais</h2>
-                    <h5>Fundada e XXXX soos referência na cidade de Rio Bonito e região, na venda de imóveis e admnistração de condomínios.</h5>
+                    <h2>Conheça nossa história</h2>
+                    <h4>No ano de 1975, o jovem casal de contabilistas Mariza Dario Alves e Jonas da Silva Alves deram início a uma longa e bem sucedida carreira empresarial. Somos especialistas na gestão de pessoal para pessoas físicas e jurídicas, com a mesma excelência do casal fundador.</h4>
                         <div className="BlockInfosAbout">
                             <div className="svgInfo">
                                 <FiCheckCircle />
                             </div>
                             <div className="BlockInfosText">
-                                <h4>Nossa missão</h4>
-                                <h5>Ser intermediadora e facilitadora de bons negócios, que levem a prosperidade, o bem estar e lucros aos clientes. <br />
-                                Administrando e gerindo condomínios trazendo conforto e tranquilidade para todas as partes.</h5>
+                                {/* <h4>Nossa missão</h4> */}
+                                <h4>Garantimos, assim, o cumprimento da legislação e boas práticas nas relações entre empregados e empregadores em todos os níveis. <br />
+                                Seja bem-vindo! <br /><br />
+                                Será um prazer poder compartilhar essa experiência com você também. <br />
+                                Emanuel Dário Alves</h4>
                                 </div>
                         </div>
-                        <div className="BlockInfosAbout">
+                        {/* <div className="BlockInfosAbout">
                             <div className="svgInfo">
                             <FiCheckCircle />
                             </div>
@@ -89,7 +91,7 @@ export function About() {
                                 <h4>Nossos valores</h4>
                                 <h5>Ser ética com seus parceiros e clientes, respeitando as normas e os contratos pré-estabelecidos.</h5>
                                 </div>
-                        </div>
+                        </div> */}
                 </div>
             </div>
 

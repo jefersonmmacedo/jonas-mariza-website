@@ -45,7 +45,7 @@
     height: 100%x;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin: 40px 0;
 }
@@ -53,46 +53,40 @@
     width: 40%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .About .aboutInfos .ImagesAbout .imageAbout1 {
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 200px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
-    position: absolute;
-    z-index: 1;
-    margin-bottom: 80px;
-    margin-right: 150px;
+    margin: 5px;
 }
 .About .aboutInfos .ImagesAbout .imageAbout1 img {
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 200px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
 }
 .About .aboutInfos .ImagesAbout .imageAbout2 {
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 200px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
-    position: absolute;
-    z-index: 1;
-    margin-top: 80px;
-    margin-left: 150px;
+    margin: 5px;
 }
 .About .aboutInfos .ImagesAbout .imageAbout2 img {
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 200px;
     border-radius: 0 20px 0 20px;
     object-fit: cover;
 }
 
 .About .aboutInfos .TextAboutInfo {
     width: 50%;
-    height: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -226,53 +220,34 @@
         .About .aboutInfos {
             height: 100%;
         }
-        .About .aboutInfos .ImagesAbout .imageAbout1 {
-            width: 250px;
-            height: 300px;
-            border-radius: 0 20px 0 20px;
-            object-fit: cover;
-            position: absolute;
-            z-index: 1;
-            margin-bottom: 150px;
-            margin-right: 100px;
+
+    @media (max-width: 850px) {
+
+        .About .aboutInfos {
+            width: 100%;
+            height: 100%x;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 40px 0;
         }
-        .About .aboutInfos .ImagesAbout .imageAbout1 img {
-            width: 250px;
-            height: 300px;
-            border-radius: 0 20px 0 20px;
-            object-fit: cover;
+
+        .About .aboutInfos .TextAboutInfo {
+            width: 95%;
+            height: 100%;
+            padding: 20px 20px;
         }
-        .About .aboutInfos .ImagesAbout .imageAbout2 {
-            width: 250px;
-            height: 300px;
-            border-radius: 0 20px 0 20px;
-            object-fit: cover;
-            position: absolute;
-            z-index: 1;
-            margin-top: 150px;
-            margin-left: 100px;
-        }
-        .About .aboutInfos .ImagesAbout .imageAbout2 img {
-            width: 250px;
-            height: 300px;
-            border-radius: 0 20px 0 20px;
-            object-fit: cover;
-        }
-    @media (max-width: 800px) {
+
+
         .About .topImageAbout .back {
             padding: 50px;
         }
         @media (max-width: 750px) {
 
-            .About .aboutInfos .ImagesAbout {
-                display: none;
-            }
 
-            .About .aboutInfos .TextAboutInfo {
-                width: 95%;
-                height: 100%;
-                padding: 20px 20px;
-            }
+
+
 
         @media (max-width: 650px) {
 
@@ -295,6 +270,29 @@
                     .About .topImageAbout .back {
                         padding: 40px 10px;
                     }
+                    @media (max-width: 390px) {
+                        .About .aboutInfos .ImagesAbout {
+                            width: 90%;
+                        }
+                        .About .aboutInfos .ImagesAbout .imageAbout1 {
+                            width: 100%;
+                           
+                        }
+                        .About .aboutInfos .ImagesAbout .imageAbout1 img {
+                            width: 100%;
+                          
+                        }
+                        .About .aboutInfos .ImagesAbout .imageAbout2 {
+                            width: 100%;
+                           
+                        }
+                        .About .aboutInfos .ImagesAbout .imageAbout2 img {
+                            width: 100%;
+                           
+                        }
+                    }
+
+
                         
                 }
             }   
