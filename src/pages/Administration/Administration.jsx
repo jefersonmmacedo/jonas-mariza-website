@@ -22,93 +22,32 @@ export function Administration() {
                 </div>
             </div>
 
-            <div className="financer">
-            <h2>Porque <span>avaliar</span> meu imóvel?</h2>
-                <h4>Veja 6 vantagens de realizar uma avaliação de imóvel.</h4>
-
-                <div className="benefits">
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Cobrar o valor justo pela casa, apartamento ou terreno.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Avaliar melhorias a serem feitas antes colocar o imóvel no mercado.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Checar se a documentação está em dia antes de uma possível negociação.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Avaliar as condições estruturais do imóvel antes de uma possível negociação.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>A localização é um ponto-chave na avaliação de imóveis.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                        <div className="text">
-                        <h5>Quanto mais segurança, mais atrativo se torna o imóvel. </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ 
 
             <div className="stepesFinances">
-                            <h2>Avalie  <span>seu imóvel</span> com a gente</h2>
-                <h4>Facilite seu processo de negociação com uma avaliação profissional.</h4>
+                            <h2>ADMINISTRAÇÃO DE   <span>CONDOMÍNIOS</span></h2>
+                <h4>
+A administração de condomínios é a gestão e coordenação das atividades relacionadas à manutenção e operação de um condomínio residencial ou comercial. O objetivo principal é garantir o bem-estar e a segurança dos moradores ou proprietários, bem como a conservação e valorização do patrimônio do condomínio.
+<br /><br />
+ALGUNS DE NOSSOS SERVIÇOS<br />
+Atendimento em sua sede, no horário comercial ao Síndico ou Sub-Síndico e Conselheiros, bem como aos Condôminos, sobre qualquer assunto ou dúvida pertinente à administração do prédio. <br /> 
+Convocação por ordem do Síndico ou dos Condôminos, através de editais e nos termos estabelecidos na Convenção, de Assembleias Gerais Ordinárias e Extraordinárias. <br />
+Lavratura de atas das Assembleias, efetivando os seus respectivos registros nos Cartórios de Títulos e Documentos. <br />
+Elaboração das pastas de prestação de contas mensais, providenciando seu encaminhamento para que o Síndico as examine e as encaminhe ao Conselho Fiscal para aprovação. <br />
+Emissão dos avisos bancários para a arrecadação das cotas condominiais mensais, fundos de reserva e/ou de obras, que deverão ser pagáveis na rede bancária.<br />
+Guarda de todos os documentos do Condomínio que estejam em seu poder, tais como, jogos de plantas, livro de atas, apólices de seguro, etc, até a sua efetiva entrega ao Síndico. <br />
+Pagamento de todos os compromissos assumidos pelo Condomínio, desde que haja disponibilidade financeira.<br />
+Elaboração das previsões orçamentárias e envio para aprovação do Síndico e Conselheiros. <br />
+Posição financeira eletrônica dos saldos de conta corrente e aplicações financeiras, sempre que solicitados pelo Síndico. <br />
+Cobrança das cotas condominiais em atraso, acrescidas de multa, juros, correção monetária, as quais serão creditadas ao Condomínio. <br />
+Atendimento sempre que se faça necessário, a fiscalização do Ministério do Trabalho, Prefeitura Municipal, Corpo de Bombeiros, Sindicato da categoria, etc.<br />
+Elaboração de balancete mensal de receitas e despesas, inclusive financeiras, com conciliação bancária.<br />
+Cobrança com emissão de boleto bancário e controle de pagamento.
+Elaboração de editais, atas e correspondências.
+Elaboração da prestação de contas do Síndico, no encerramento de gestão.</h4>
 
-                <button onClick={handleContact}> <img src={Zap} alt="Imagem logo whatsapp" /> Entre em contato com a gente</button>
+              
 
-                {/* <div className="stepesList">
-                <div className="stepeUnic">
-                    <h1>1</h1>
-                    <div className="textStepe">
-                        <h4>Simulação e aprovação de crédito </h4>
-                        <h5>Preencha os seus dados e os do imóvel para simular e solicitar a análise de crédito. </h5>
-                    </div>
-                </div>
-                <div className="stepeUnic2">
-                    <div className="textStepe2">
-                        <h4>Cadastro e documentação</h4>
-                        <h5>Cadastre as informações da proposta e envie os documentos solicitados. </h5>
-                    </div>
-                    <h1>2</h1>
-                </div>
-                <div className="stepeUnic">
-                    <h1>3</h1>
-                    <div className="textStepe">
-                        <h4>Análise de documentos e vistoria do imóvel</h4>
-                        <h5>Após enviar seus documentos, é hora de acompanhar a análise técnica e marcar a vistoria. </h5>
-                    </div>
-                </div>
-                <div className="stepeUnic2">
-                    <div className="textStepe2">
-                        <h4>Contrato</h4>
-                        <h5>Após a conclusão das análises, você irá até a agência assinar o contrato.</h5>
-                    </div>
-                    <h1>4</h1>
-                </div>
-                <div className="stepeUnic">
-                    <h1>5</h1>
-                    <div className="textStepe">
-                        <h4>Liberação de crédito</h4>
-                        <h5>Após a entrega ao Santander do contrato registrado e matrícula atualizada, o crédito será liberado ao vendedor.</h5>
-                    </div>
-                </div>
-                </div> */}
             </div>
 
                 <Footer idCompany={idCompany}/>

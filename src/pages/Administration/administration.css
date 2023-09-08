@@ -117,11 +117,12 @@
 .Administration .stepesFinances {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     padding: 20px 0 40px 0;
     background-color: var(--BorderHover);
+    text-align: left;
 }
 
  
@@ -152,7 +153,7 @@
     margin-top: 40px;
     font-weight: bold;
     color: var(--Description);
-    text-align: center;
+        text-align: left;
 }
 .Administration .stepesFinances span {
     color: var(--Primary);
@@ -160,7 +161,7 @@
 .Administration .stepesFinances h4 {
     color: var(--Paragraph);
     margin:10px;
-    text-align: center;
+        text-align: left;
 }
 .Administration .stepesFinances .stepesList {
     display: flex;
