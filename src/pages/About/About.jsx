@@ -1,7 +1,7 @@
 ﻿import { Footer } from "../../components/Footer/Footer";
 import Navbar2 from "../../components/Nav/Navbar";
 import Image1 from '../../assets/images/pais1.png'
-import Image2 from '../../assets/images/pais2.png'
+import Image2 from '../../assets/images/pais3.jpeg'
 import corretor1 from '../../assets/images/corretor1.jpg'
 import corretor2 from '../../assets/images/corretor2.jpg'
 import corretor3 from '../../assets/images/corretor3.jpg'

@@ -22,55 +22,50 @@ export function Legalization() {
                 </div>
             </div>
 
-            <div className="financer">
-            <h2>Porque <span>avaliar</span> meu imóvel?</h2>
-                <h4>Veja 6 vantagens de realizar uma avaliação de imóvel.</h4>
-
-                <div className="benefits">
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Cobrar o valor justo pela casa, apartamento ou terreno.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Avaliar melhorias a serem feitas antes colocar o imóvel no mercado.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Checar se a documentação está em dia antes de uma possível negociação.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>Avaliar as condições estruturais do imóvel antes de uma possível negociação.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                         <div className="text">
-                        <h5>A localização é um ponto-chave na avaliação de imóveis.</h5>
-                        </div>
-                    </div>
-                    <div className="benefitUnic">
-                        <BiCheckDouble/>
-                        <div className="text">
-                        <h5>Quanto mais segurança, mais atrativo se torna o imóvel. </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          
 
             <div className="stepesFinances">
-                            <h2>Avalie  <span>seu imóvel</span> com a gente</h2>
-                <h4>Facilite seu processo de negociação com uma avaliação profissional.</h4>
+                            <h2>LEGALIZAÇÃO DE   <span>IMÓVEIS</span></h2>
+                <h4>
+Nossos Serviços
+        <br />
+        <br />
+PREFEITURA<br />
+	Averbação<br />
+	Habite-se<br />
+	Demolição<br />
+	Fracionamento<br />
+	IPTU<br />
+    <br /><br />
+RECEITA FEDERAL<br />
+	CNO<br />
+	SERO<br />
+	Certidões<br />
+    <br /><br />
+CARTÓRIO<br />
+Escrituras<br />
+	Registro de Imóveis -RGI<br />
+	Averbações<br />
+    <br /><br />
+BENEFÍCIOS<br />
+<br />
+TRANQUILIDADE<br />
+Regularizar seu imóvel junto aos órgãos competentes, evitando notificações, multas e processos desnecessários;
+<br /><br />
 
-                <button onClick={handleContact}> <img src={Zap} alt="Imagem logo whatsapp" /> Entre em contato com a gente</button>
+VALORIZAÇÃO DO PATRIMÔNIO<br />
+
+Qualquer imóvel fica mais valorizado se estiver devidamente regularizado;
+<br />
+Quando se negocia uma propriedade, qualquer agente financeiro (banco) exige a documentação em dia.
+<br /><br />
+ASSEGURAR O FUTURO<br />
+<br />
+O pior momento em que a regularização também se faz necessária é a hora do inventário.
+<br />
+Deixar tudo regularizado agora evita grandes dores de cabeça para os herdeiros no futuro.</h4>
+
+              
 
                 {/* <div className="stepesList">
                 <div className="stepeUnic">
