@@ -27,7 +27,8 @@ export function Legalization() {
             <div className="stepesFinances">
                             <h2>LEGALIZAÇÃO DE   <span>IMÓVEIS</span></h2>
                 <h4>
-Nossos Serviços
+                    <br />
+<b>Nossos Serviços</b>
         <br />
         <br />
 PREFEITURA<br />
@@ -37,30 +38,29 @@ PREFEITURA<br />
 	Fracionamento<br />
 	IPTU<br />
     <br /><br />
-RECEITA FEDERAL<br />
+<b>RECEITA FEDERAL</b><br />
 	CNO<br />
 	SERO<br />
 	Certidões<br />
     <br /><br />
-CARTÓRIO<br />
+<b>CARTÓRIO</b><br />
 Escrituras<br />
 	Registro de Imóveis -RGI<br />
 	Averbações<br />
     <br /><br />
-BENEFÍCIOS<br />
+<b>-- BENEFÍCIOS --</b><br />
 <br />
-TRANQUILIDADE<br />
+<b>TRANQUILIDADE</b><br />
 Regularizar seu imóvel junto aos órgãos competentes, evitando notificações, multas e processos desnecessários;
 <br /><br />
 
-VALORIZAÇÃO DO PATRIMÔNIO<br />
+<b>VALORIZAÇÃO DO PATRIMÔNIO</b><br />
 
 Qualquer imóvel fica mais valorizado se estiver devidamente regularizado;
 <br />
 Quando se negocia uma propriedade, qualquer agente financeiro (banco) exige a documentação em dia.
 <br /><br />
-ASSEGURAR O FUTURO<br />
-<br />
+<b>ASSEGURAR O FUTURO</b><br />
 O pior momento em que a regularização também se faz necessária é a hora do inventário.
 <br />
 Deixar tudo regularizado agora evita grandes dores de cabeça para os herdeiros no futuro.</h4>
