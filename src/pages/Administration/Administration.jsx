@@ -31,6 +31,29 @@ A administração de condomínios é a gestão e coordenação das atividades re
 <br /><br /><br />
 <b>ALGUNS DE NOSSOS SERVIÇOS</b>
 <br /><br />
+- Atendimento em sua sede, no horário comercial. <br />
+- Convocação por ordem do Síndico ou dos Condôminos, através de editais.<br />
+- Lavratura de atas das Assembleias. <br />
+- Elaboração de editais, atas e correspondências.<br />
+- Elaboração de balancete mensal de receitas e despesas.<br />
+- Emissão dos boletos bancários mensais<br />
+- Pagamento de todos os compromissos assumidos pelo Condomínio.<br />
+- Elaboração das previsões orçamentárias.<br />
+- Posição financeira eletrônica dos saldos de conta corrente.<br />
+- Cobrança das Cotas Condominiais em atraso.<br />
+</h4>
+<br /><br />
+
+              
+
+            </div>
+            {/* <div className="stepesFinances">
+                            <h2>ADMINISTRAÇÃO DE   <span>CONDOMÍNIOS</span></h2>
+                <h4>
+A administração de condomínios é a gestão e coordenação das atividades relacionadas à manutenção e operação de um condomínio residencial ou comercial. O objetivo principal é garantir o bem-estar e a segurança dos moradores ou proprietários, bem como a conservação e valorização do patrimônio do condomínio.
+<br /><br /><br />
+<b>ALGUNS DE NOSSOS SERVIÇOS</b>
+<br /><br />
 - Atendimento em sua sede, no horário comercial ao Síndico ou Sub-Síndico e Conselheiros, bem como aos Condôminos, sobre qualquer assunto ou dúvida pertinente à administração do prédio. <br /> <br />
 - Convocação por ordem do Síndico ou dos Condôminos, através de editais e nos termos estabelecidos na Convenção, de Assembleias Gerais Ordinárias e Extraordinárias. <br /><br />
 - Lavratura de atas das Assembleias, efetivando os seus respectivos registros nos Cartórios de Títulos e Documentos. <br /><br />
@@ -50,7 +73,7 @@ A administração de condomínios é a gestão e coordenação das atividades re
 
               
 
-            </div>
+            </div> */}
 
                 <Footer idCompany={idCompany}/>
         </div>
